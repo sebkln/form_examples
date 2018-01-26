@@ -1,0 +1,11 @@
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<path fill="#D5E9F7" enable-background="new    " d="M64,8l56,40v72H8V48L64,8z"/>
+<path fill="#3B7EB0" d="M64,17.6L112,52v60H16V52L64,17.6 M64,8L8,48v72h112V48L64,8z"/>
+<path fill="#FFFFFF" d="M24,24h80v80H24V24z"/>
+<path fill="#666666" d="M96,32v64H32V32H96 M104,24H24v80h80V24z"/>
+<path fill="#B9B9B9" d="M40,56h48v8H40V56z M40,40h48v8H40V40z M40,72h48v8H40V72z"/>
+<path fill="#C1D7E8" enable-background="new    " d="M120,48v72H8V48l56,40L120,48z"/>
+<path fill="#3B7EB0" d="M64,88L8,48v72h112V48L64,88z M16,63.2l28,20L16,112V63.2z M27.2,112l23.2-23.2L64,97.6L76.8,88l23.2,23.2
+	H27.2V112z M84,84l28-20.8V112L84,84z"/>
+</svg>

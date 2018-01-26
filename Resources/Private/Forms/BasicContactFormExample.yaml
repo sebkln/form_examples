@@ -1,0 +1,103 @@
+
+identifier: BasicContactFormExample
+label: 'Basic contact form example'
+type: Form
+prototypeName: basicContactFormExample
+finishers:
+  -
+    identifier: EmailToReceiver
+    options:
+      subject: 'Your message: {subject}'
+      recipientAddress: your.company@example.com
+      recipientName: 'Your Company name'
+      senderAddress: '{email}'
+      senderName: '{name}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+  -
+    identifier: SaveToDatabase
+    options:
+      -
+        table: 'tx_formexamples_domain_model_data'
+        mode: insert
+        databaseColumnMappings:
+          pid:
+            value: 6
+          tstamp:
+            value: '{__currentTimestamp}'
+          formtitle:
+            value: 'Basic contact form'
+        elements:
+          name:
+            mapOnDatabaseColumn: 'lastname'
+          subject:
+            mapOnDatabaseColumn: 'subject'
+          email:
+            mapOnDatabaseColumn: 'email'
+          message:
+            mapOnDatabaseColumn: 'message'
+  -
+    identifier: Confirmation
+    options:
+      message: 'Thank you for your message! We will get back to you as soon as possible.'
+renderables:
+  -
+    identifier: page-1
+    label: 'Contact Form'
+    type: Page
+    renderables:
+      -
+        defaultValue: ''
+        identifier: name
+        label: Name
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Name
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: subject
+        label: Subject
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Subject
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: email
+        label: Email
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Email address'
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        identifier: message
+        label: Message
+        type: Textarea
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: ''
+        validators:
+          -
+            identifier: NotEmpty
+  -
+    identifier: summarypage
+    label: 'Summary page'
+    type: SummaryPage

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-06-28T20:13:38Z"
+          product-name="form_examples">
+        <header/>
+        <body>
+            <trans-unit id="tx_formexamples_domain_model_data">
+                <source>Submitted form data</source>
+                <target>Übermittelte Formulardaten</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.formtitle">
+                <source>Title of the used form</source>
+                <target>Name des verwendeten Formulars</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.pagetitle">
+                <source>Page from which was submitted</source>
+                <target>Seite, von der abgesendet wurde</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.firstname">
+                <source>First name</source>
+                <target>Vorname</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.lastname">
+                <source>Last name</source>
+                <target>Nachname</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.title">
+                <source>Title</source>
+                <target>Anrede</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.company">
+                <source>Company</source>
+                <target>Firma</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.email">
+                <source>Email address</source>
+                <target>E-Mail-Adresse</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.address">
+                <source>Address</source>
+                <target>Anschrift</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.zip">
+                <source>Zip code</source>
+                <target>Postleitzahl</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.city">
+                <source>City</source>
+                <target>Stadt</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.country">
+                <source>Country</source>
+                <target>Land</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.www">
+                <source>Website</source>
+                <target>Webseite</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.telephone">
+                <source>Telephone number</source>
+                <target>Telefonnummer</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.fax">
+                <source>Fax number</source>
+                <target>Faxnummer</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.subject">
+                <source>Subject</source>
+                <target>Betreff</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.message">
+                <source>Message</source>
+                <target>Nachricht</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.media">
+                <source>Media</source>
+                <target>Medien</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

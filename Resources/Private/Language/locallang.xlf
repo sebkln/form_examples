@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-06-28T20:13:38Z" product-name="form_examples">
+        <header/>
+        <body>
+            <trans-unit id="tx_formexamples_domain_model_data">
+                <source>Submitted form data</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.formtitle">
+                <source>Title of the used form</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.pagetitle">
+                <source>Page from which was submitted</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.firstname">
+                <source>First name</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.lastname">
+                <source>Last name</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.company">
+                <source>Company</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.email">
+                <source>Email address</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.address">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.zip">
+                <source>Zip code</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.city">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.country">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.www">
+                <source>Website</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.telephone">
+                <source>Telephone number</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.fax">
+                <source>Fax number</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.subject">
+                <source>Subject</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.message">
+                <source>Message</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.media">
+                <source>Media</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

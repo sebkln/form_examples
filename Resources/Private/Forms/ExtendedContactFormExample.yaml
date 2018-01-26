@@ -1,0 +1,277 @@
+
+type: Form
+identifier: ExtendedContactFormExample
+label: 'Extended contact form example'
+prototypeName: standard
+finishers:
+  -
+    identifier: EmailToReceiver
+    options:
+      subject: 'Your message: {subject}'
+      recipientAddress: your.company@example.com
+      recipientName: 'Your Company name'
+      senderAddress: '{email}'
+      senderName: '{firstname} {lastname}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+  -
+    identifier: SaveToDatabase
+    options:
+      -
+        table: 'tx_formexamples_domain_model_data'
+        mode: insert
+        databaseColumnMappings:
+          pid:
+            value: 6
+          crdate:
+            value: '{__currentTimestamp}'
+          tstamp:
+            value: '{__currentTimestamp}'
+          formtitle:
+            value: 'Extended contact form'
+        elements:
+          subject:
+            mapOnDatabaseColumn: 'subject'
+          message:
+            mapOnDatabaseColumn: 'message'
+          title:
+            mapOnDatabaseColumn: 'title'
+          firstname:
+            mapOnDatabaseColumn: 'firstname'
+          lastname:
+            mapOnDatabaseColumn: 'lastname'
+          company:
+            mapOnDatabaseColumn: 'company'
+          address:
+            mapOnDatabaseColumn: 'address'
+          zip:
+            mapOnDatabaseColumn: 'zip'
+          city:
+            mapOnDatabaseColumn: 'city'
+          country:
+            mapOnDatabaseColumn: 'country'
+          email:
+            mapOnDatabaseColumn: 'email'
+          telephone:
+            mapOnDatabaseColumn: 'telephone'
+          fax:
+            mapOnDatabaseColumn: 'fax'
+          www:
+            mapOnDatabaseColumn: 'www'
+          birth-certificate:
+            mapOnDatabaseColumn: 'media'
+          pagetitle:
+            mapOnDatabaseColumn: 'pagetitle'
+      -
+        table: sys_file_reference
+        mode: insert
+        elements:
+          birth-certificate:
+            mapOnDatabaseColumn: 'uid_local'
+        databaseColumnMappings:
+          table_local:
+            value: 'sys_file'
+          tablenames:
+            value: 'tx_formexamples_domain_model_data'
+          fieldname:
+            value: 'media'
+          tstamp:
+            value: '{__currentTimestamp}'
+          crdate:
+            value: '{__currentTimestamp}'
+          uid_foreign:
+            value: '{SaveToDatabase.insertedUids.0}'
+renderables:
+  -
+    type: Page
+    identifier: page-1
+    label: 'How can we help you?'
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-communication
+        label: Communication
+        renderables:
+          -
+            properties:
+              options:
+                'Send me your brochure': 'Send me your brochure'
+                'I have questions about your product': 'I have questions about your product'
+                'Please call me back': 'Please call me back'
+                'Other (please write below)': 'Other (please write below)'
+              prependOptionLabel: 'Please select your subject'
+              fluidAdditionalAttributes:
+                required: required
+            type: SingleSelect
+            identifier: subject
+            label: Subject
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: message
+            label: 'Your message'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+  -
+    type: Page
+    identifier: page-2
+    label: 'Please tell us about yourself'
+    renderables:
+      -
+        properties:
+          text: 'We only need this little personal data.'
+        type: StaticText
+        identifier: trust-us
+        label: 'Trust us!'
+      -
+        type: Fieldset
+        identifier: fieldset-person
+        label: Person
+        renderables:
+          -
+            properties:
+              options:
+                Mr: Mr
+                Mrs: Mrs
+                Ms: Ms
+              fluidAdditionalAttributes:
+                required: required
+            type: SingleSelect
+            identifier: title
+            label: Title
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: firstname
+            label: 'First name'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: lastname
+            label: 'Last name'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: company
+            label: Company
+      -
+        type: Fieldset
+        identifier: fieldset-address
+        label: Address
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: address
+            label: Address
+          -
+            defaultValue: ''
+            type: Text
+            identifier: zip
+            label: 'Zip code'
+          -
+            defaultValue: ''
+            type: Text
+            identifier: city
+            label: City
+          -
+            defaultValue: ''
+            type: Text
+            identifier: country
+            label: Country
+          -
+            type: Fieldset
+            identifier: fieldset-contact
+            label: 'Contact information'
+            renderables:
+              -
+                defaultValue: ''
+                type: Text
+                identifier: email
+                label: 'Email address'
+                properties:
+                  fluidAdditionalAttributes:
+                    required: required
+                validators:
+                  -
+                    identifier: EmailAddress
+                  -
+                    identifier: NotEmpty
+              -
+                defaultValue: ''
+                type: Text
+                identifier: telephone
+                label: Telephone
+              -
+                defaultValue: ''
+                type: Text
+                identifier: fax
+                label: Fax
+              -
+                defaultValue: ''
+                type: Text
+                identifier: www
+                label: Website
+      -
+        type: Fieldset
+        identifier: fieldset-1
+        label: Other
+        renderables:
+          -
+            properties:
+              saveToFileMount: '1:/user_upload/'
+              allowedMimeTypes:
+                - application/msword
+                - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                - application/msexcel
+                - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                - application/pdf
+                - application/vnd.oasis.opendocument.text
+                - application/vnd.oasis.opendocument.spreadsheet-template
+                - image/jpeg
+                - image/png
+                - image/bmp
+              fluidAdditionalAttributes:
+                required: required
+            type: FileUpload
+            identifier: birth-certificate
+            label: 'Please upload your birth certificate'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Hidden
+            identifier: pagetitle
+            label: 'Page title'
+  -
+    type: SummaryPage
+    identifier: summarypage
+    label: 'Summary page'

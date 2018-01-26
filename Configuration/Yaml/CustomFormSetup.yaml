@@ -1,0 +1,47 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          999: EXT:form_examples/Resources/Private/Forms/
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: true
+
+      prototypes:
+        ### PROTOTYPE: STANDARD
+        standard:
+          formElementsDefinition:
+            Form:
+              formEditor:
+                editors:
+                  900:
+                    selectOptions:
+                      50:
+                        value: 'Confirmation'
+                        label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
+                      60:
+                        value: 'SaveToDatabase'
+                        label: 'formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label'
+          finishersDefinition:
+            Confirmation:
+              FormEngine:
+                label: 'formEditor.element.AdvancedPassword.editor.confirmationLabel.predefinedDefaults'
+                elements:
+                  message:
+                    label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
+                    config:
+                      type: 'input'
+
+        ### PROTOTYPE: BASIC CONTACT FORM EXAMPLE
+        basicContactFormExample:
+          __inheritances:
+            10: 'TYPO3.CMS.Form.prototypes.standard'
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Templates/'
+                partialRootPaths:
+                  100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Partials/'
+                layoutRootPaths:
+                  100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Layouts/'
