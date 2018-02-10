@@ -1,0 +1,120 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+identifier: CustomHtmlMailExample
+label: 'Custom HTML mail example'
+type: Form
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'E-Mail from website'
+      recipientAddress: your.company@example.com
+      recipientName: 'Your Company name'
+      senderAddress: '{email}'
+      senderName: '{lastname}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      subject: 'Your message'
+      recipientAddress: '{email}'
+      recipientName: '{lastname}'
+      senderAddress: your.company@example.com
+      senderName: 'Your Company name'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      # The following part enabless us to use the customized template:
+      templateName: '{@format}.html'
+      templateRootPaths:
+        20: 'EXT:form_examples/Resources/Private/Forms/CustomHtmlMailExample/Frontend/Templates/Finishers/Email/'
+    identifier: EmailToSender
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    identifier: page-1
+    label: 'Contact Form'
+    type: Page
+    renderables:
+      -
+        properties:
+          options:
+            Mr: Mr
+            Ms: Ms
+          prependOptionLabel: 'Please choose ...'
+          fluidAdditionalAttributes:
+            required: required
+        type: SingleSelect
+        identifier: title
+        label: Title
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: firstname
+        label: 'First name'
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'First name'
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: lastname
+        label: 'Last name'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Last name'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: email
+        label: Email
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Email address'
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        identifier: message
+        label: Message
+        type: Textarea
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: ''
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    identifier: summarypage
+    label: 'Summary page'
+    type: SummaryPage
