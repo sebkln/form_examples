@@ -33,7 +33,7 @@ finishers:
       blindCarbonCopyAddress: ''
       format: html
       attachUploads: 'true'
-      # The following part enabless us to use the customized template:
+      # The following part enables us to use the customized template:
       templateName: '{@format}.html'
       templateRootPaths:
         20: 'EXT:form_examples/Resources/Private/Forms/CustomHtmlMailExample/Frontend/Templates/Finishers/Email/'
