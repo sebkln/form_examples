@@ -36,7 +36,7 @@ finishers:
       # The following part enables us to use the customized template:
       templateName: '{@format}.html'
       templateRootPaths:
-        20: 'EXT:form_examples/Resources/Private/Forms/CustomHtmlMailExample/Frontend/Templates/Finishers/Email/'
+        20: 'EXT:form_examples/Resources/Private/Forms/CustomHtmlMailExample/Sender/'
     identifier: EmailToSender
 renderables:
   -
