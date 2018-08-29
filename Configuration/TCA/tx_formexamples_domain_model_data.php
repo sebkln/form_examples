@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data',
+        'title' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data',
         'label' => 'firstname',
         'label_userFunc' => 'Sebkln\\FormExamples\\UserFunc\\Tca->formDataLabel',
         'tstamp' => 'tstamp',
@@ -132,7 +132,7 @@ return [
         ],
         'formtitle' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.formtitle',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.formtitle',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -142,7 +142,7 @@ return [
         ],
         'pagetitle' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.pagetitle',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.pagetitle',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -152,7 +152,7 @@ return [
         ],
         'firstname' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.firstname',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.firstname',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -162,7 +162,7 @@ return [
         ],
         'lastname' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.lastname',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.lastname',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -172,7 +172,7 @@ return [
         ],
         'title' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.title',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.title',
             'config' => [
                 'type' => 'input',
                 'size' => 10,
@@ -182,7 +182,7 @@ return [
         ],
         'company' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.company',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.company',
             'config' => [
                 'type' => 'input',
                 'size' => 60,
@@ -192,7 +192,7 @@ return [
         ],
         'email' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.email',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.email',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -202,7 +202,7 @@ return [
         ],
         'address' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.address',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.address',
             'config' => [
                 'type' => 'input',
                 'size' => 60,
@@ -212,7 +212,7 @@ return [
         ],
         'zip' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.zip',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.zip',
             'config' => [
                 'type' => 'input',
                 'size' => 10,
@@ -222,7 +222,7 @@ return [
         ],
         'city' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.city',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.city',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -232,7 +232,7 @@ return [
         ],
         'country' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.country',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.country',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -242,7 +242,7 @@ return [
         ],
         'www' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.www',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.www',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -252,7 +252,7 @@ return [
         ],
         'telephone' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.telephone',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.telephone',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -262,7 +262,7 @@ return [
         ],
         'fax' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.fax',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.fax',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -272,7 +272,7 @@ return [
         ],
         'subject' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.subject',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.subject',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -282,7 +282,7 @@ return [
         ],
         'message' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.message',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.message',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -293,7 +293,7 @@ return [
         ],
         'media' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang.xlf:tx_formexamples_domain_model_data.media',
+            'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.media',
             'config' => [
                     'type' => 'inline',
                     'foreign_table' => 'sys_file_reference',
