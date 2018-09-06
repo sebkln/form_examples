@@ -27,7 +27,7 @@ finishers:
         mode: insert
         databaseColumnMappings:
           pid:
-            value: 6
+            value: 21
           tstamp:
             value: '{__currentTimestamp}'
           formtitle:
