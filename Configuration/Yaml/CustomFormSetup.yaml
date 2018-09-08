@@ -12,6 +12,14 @@ TYPO3:
         standard:
           formElementsDefinition:
             Form:
+              renderingOptions:
+                translation:
+                  translationFile:
+                    # Default translation file for the frontend:
+                    10: 'EXT:form/Resources/Private/Language/locallang.xlf'
+                    # Load your own translation file(s) as desired:
+                    20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
+                    30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
               formEditor:
                 editors:
                   900:

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-09-08T12:46:21Z" product-name="form_examples">
+        <header/>
+        <body>
+            <!-- ### LABELS, FIELDSETS, HEADINGS
+                 Translation key: <form-identifier>.element.<element-name>.properties.label
+            -->
+            <trans-unit id="BasicContactFormExample.element.page-1.properties.label">
+                <source>Basic contact form</source>
+            </trans-unit>
+            <trans-unit id="BasicContactFormExample.element.name.properties.label">
+                <source>Name and surname</source>
+            </trans-unit>
+            <trans-unit id="BasicContactFormExample.element.subject.properties.label">
+                <source>Subject</source>
+            </trans-unit>
+            <trans-unit id="BasicContactFormExample.element.message.properties.label">
+                <source>Your message</source>
+            </trans-unit>
+
+
+
+
+            <!-- ### PLACEHOLDER ATTRIBUTES
+                 Translation key: <form-identifier>.element.<element-name>.properties.placeholder
+            -->
+            <trans-unit id="BasicContactFormExample.element.name.properties.placeholder">
+                <source>John Doe</source>
+            </trans-unit>
+            <trans-unit id="BasicContactFormExample.element.subject.properties.placeholder">
+                <source>Your concern</source>
+            </trans-unit>
+            <trans-unit id="BasicContactFormExample.element.message.properties.placeholder">
+                <source>How can we be of help?</source>
+            </trans-unit>
+
+
+
+
+            <!-- ### BUTTONS
+                 Translation keys:
+                 - element.<form-identifier>.renderingOptions.submitButtonLabel
+
+                 Note: 'previousButtonLabel' and 'nextButtonLabel' are currently not translatable for a specific form.
+                       Issue: https://forge.typo3.org/issues/86202
+            -->
+            <trans-unit id="element.BasicContactFormExample.renderingOptions.submitButtonLabel">
+                <source>Send message!</source>
+            </trans-unit>
+
+
+
+
+            <!-- ### FINISHERS
+                 Translation key: <form-identifier>.finisher.<finisher-identifier>.<option-name>
+            -->
+            <trans-unit id="ExtendedContactFormExample.finisher.Confirmation.message">
+                <source>Next time, we'll want to know some more about you!</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

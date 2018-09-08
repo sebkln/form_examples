@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-09-08T12:46:21Z" product-name="form_examples">
+        <header/>
+        <body>
+            <!-- TRANSLATION FOR ALL FORMS
+
+                 Note: Every translation key can be overridden by prepending it with the form identifier:
+                       '<form-identifier>.element.<element-name>.properties.label' will override
+                       'element.<element-name>.properties.label'
+            -->
+
+
+            <!-- ### LABELS, FIELDSETS, HEADINGS
+                 Translation keys:
+                 - element.<element-name>.properties.label
+                 - element.<element-type>.properties.<property-name>
+            -->
+            <trans-unit id="element.email.properties.label">
+                <source>Email address</source>
+            </trans-unit>
+            <trans-unit id="element.SummaryPage.properties.label">
+                <source>Summary</source>
+            </trans-unit>
+
+
+
+
+            <!-- ### PLACEHOLDER ATTRIBUTES
+                 Translation key: element.<element-name>.properties.placeholder
+            -->
+            <trans-unit id="element.email.properties.placeholder">
+                <source>john@doe.com</source>
+            </trans-unit>
+
+
+
+
+            <!-- ### BUTTONS
+                 Translation keys:
+                 - element.Form.renderingOptions.submitButtonLabel
+                 - element.Page.renderingOptions.previousButtonLabel
+                 - element.Page.renderingOptions.nextButtonLabel
+                 - element.SummaryPage.renderingOptions.previousButtonLabel
+                 - element.SummaryPage.renderingOptions.nextButtonLabel
+            -->
+            <trans-unit id="element.Form.renderingOptions.submitButtonLabel">
+                <source>Send message</source>
+            </trans-unit>
+            <trans-unit id="element.Page.renderingOptions.previousButtonLabel">
+                <source>back</source>
+            </trans-unit>
+            <trans-unit id="element.Page.renderingOptions.nextButtonLabel">
+                <source>continue</source>
+            </trans-unit>
+            <trans-unit id="element.SummaryPage.renderingOptions.previousButtonLabel">
+                <source>back</source>
+            </trans-unit>
+            <trans-unit id="element.SummaryPage.renderingOptions.nextButtonLabel">
+                <source>continue</source>
+            </trans-unit>
+
+
+
+
+            <!-- ### FINISHERS
+                 Translation key: finisher.<finisher-identifier>.<option-name>
+            -->
+            <trans-unit id="finisher.EmailToSender.subject">
+                <source>Your message to the ACME GmbH</source>
+            </trans-unit>
+            <trans-unit id="finisher.EmailToReceiver.subject">
+                <source>Message from website</source>
+            </trans-unit>
+            <trans-unit id="finisher.Confirmation.message">
+                <source>Thank you for your message! We will get back to you as soon as possible.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
