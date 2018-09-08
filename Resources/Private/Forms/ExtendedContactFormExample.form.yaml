@@ -17,8 +17,6 @@ finishers:
       blindCarbonCopyAddress: ''
       format: html
       attachUploads: 'true'
-      translation:
-        language: ''
   -
     identifier: SaveToDatabase
     options:
