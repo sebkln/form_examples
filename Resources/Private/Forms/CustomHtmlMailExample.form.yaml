@@ -17,9 +17,7 @@ finishers:
       carbonCopyAddress: ''
       blindCarbonCopyAddress: ''
       format: html
-      attachUploads: 'true'
-      translation:
-        language: ''
+      attachUploads: true
     identifier: EmailToReceiver
   -
     options:
@@ -32,7 +30,7 @@ finishers:
       carbonCopyAddress: ''
       blindCarbonCopyAddress: ''
       format: html
-      attachUploads: 'true'
+      attachUploads: true
       # The following part enables us to use the customized template:
       templateName: '{@format}.html'
       templateRootPaths:
@@ -44,14 +42,14 @@ renderables:
       previousButtonLabel: 'Previous step'
       nextButtonLabel: 'Next step'
     identifier: page-1
-    label: 'Contact Form'
+    label: ''
     type: Page
     renderables:
       -
         properties:
           options:
-            Mr: Mr
-            Ms: Ms
+            male: Mr
+            female: Ms
           prependOptionLabel: 'Please choose ...'
           fluidAdditionalAttributes:
             required: required

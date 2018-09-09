@@ -41,11 +41,12 @@ The EXT:form Framework further supports a fallback chain for translations. You c
 
 You can read the full details here: https://docs.typo3.org/typo3cms/extensions/form/8.7/Concepts/FrontendRendering/Index.html#translation
 
-In this example extension, I split the translations in two files:
+In this example extension, I split the translations in several files:
 - *locallang_forms_general.xlf*  contains translations for all forms in general.
 - *locallang_forms_specific.xlf* contains values for single forms, which override the translations in the first file.
+- *locallang_forms_custom.xlf* contains translated values for individual purposes in forms, e.g. localized salutation in the sent email.
 
-Please note that the fallback chain does **not** require to split translations in separate files. This is just a possible way to organize them.
+Please note that the fallback chain does **not** require to split translations in separate files! This is just a possible way to organize them.
 Learn all about the fallback order in the link above.
 
 To use your translation files, you must load them in your custom form setup first (as done in this extension):
@@ -66,4 +67,5 @@ TYPO3:
                     # Load your own translation file(s) as desired:
                     20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
                     30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
+                    40: 'EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf'
 ````

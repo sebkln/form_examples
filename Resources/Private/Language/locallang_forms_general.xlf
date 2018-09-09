@@ -16,8 +16,20 @@
                  - element.<element-name>.properties.label
                  - element.<element-type>.properties.<property-name>
             -->
+            <trans-unit id="element.title.properties.label">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="element.firstname.properties.label">
+                <source>First name</source>
+            </trans-unit>
+            <trans-unit id="element.lastname.properties.label">
+                <source>Last name</source>
+            </trans-unit>
             <trans-unit id="element.email.properties.label">
                 <source>Email address</source>
+            </trans-unit>
+            <trans-unit id="element.message.properties.label">
+                <source>Message</source>
             </trans-unit>
             <trans-unit id="element.SummaryPage.properties.label">
                 <source>Summary</source>
@@ -26,9 +38,31 @@
 
 
 
+            <!-- ### OPTIONS
+                 Translation key: element.<element-name>.properties.options.<value>
+            -->
+            <trans-unit id="element.title.properties.prependOptionLabel">
+                <source>Please choose ...</source>
+            </trans-unit>
+            <trans-unit id="element.title.properties.options.male">
+                <source>Mr</source>
+            </trans-unit>
+            <trans-unit id="element.title.properties.options.female">
+                <source>Ms</source>
+            </trans-unit>
+
+
+
+
             <!-- ### PLACEHOLDER ATTRIBUTES
                  Translation key: element.<element-name>.properties.placeholder
             -->
+            <trans-unit id="element.firstname.properties.placeholder">
+                <source>Your first name</source>
+            </trans-unit>
+            <trans-unit id="element.lastname.properties.placeholder">
+                <source>Your last name</source>
+            </trans-unit>
             <trans-unit id="element.email.properties.placeholder">
                 <source>john@doe.com</source>
             </trans-unit>
@@ -67,7 +101,7 @@
                  Translation key: finisher.<finisher-identifier>.<option-name>
             -->
             <trans-unit id="finisher.EmailToSender.subject">
-                <source>Your message to the ACME GmbH</source>
+                <source>Your message to ACME Ltd.</source>
             </trans-unit>
             <trans-unit id="finisher.EmailToReceiver.subject">
                 <source>Message from website</source>

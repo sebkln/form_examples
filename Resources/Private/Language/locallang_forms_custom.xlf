@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-09-09T10:09:53Z" product-name="form_examples">
+        <header/>
+        <body>
+            <!-- ### CUSTOM VALUES IN FORMS
+                 Translation keys: all up to you
+            -->
+            <trans-unit id="email.salutation.male">
+                <source>Dear Mr %s,</source>
+            </trans-unit>
+            <trans-unit id="email.salutation.female">
+                <source>Dear Ms %s,</source>
+            </trans-unit>
+            <trans-unit id="email.CustomHtmlMailExample.thankyouMessage">
+                <source><![CDATA[<p>thank you for your message. We will contact you as soon as possible.</p><p>Enclosed you will find your message sent to us.</p>]]></source>
+            </trans-unit>
+            <trans-unit id="email.complimentaryClose">
+                <source><![CDATA[<p>Yours sincerely,<br>ACME Ltd.</p>]]></source>
+            </trans-unit>
+            <trans-unit id="email.yourMessageToUs">
+                <source>Your message to us:</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
