@@ -40,13 +40,22 @@
 
             <!-- ### BUTTONS
                  Translation keys:
+                 Please mind the different position of the form-identifier for submitButtonLabel:
                  - element.<form-identifier>.renderingOptions.submitButtonLabel
 
-                 Note: 'previousButtonLabel' and 'nextButtonLabel' are currently not translatable for a specific form.
-                       Issue: https://forge.typo3.org/issues/86202
+                 - <form-identifier>.element.<element-identifier>.renderingOptions.nextButtonLabel
+                 - element.<element-identifier>.renderingOptions.nextButtonLabel
+                 - <form-identifier>.element.<element-identifier>.renderingOptions.previousButtonLabel
+                 - element.<element-identifier>.renderingOptions.previousButtonLabel
             -->
             <trans-unit id="element.BasicContactFormExample.renderingOptions.submitButtonLabel">
                 <source>Send message!</source>
+            </trans-unit>
+            <trans-unit id="BasicContactFormExample.element.page-1.renderingOptions.nextButtonLabel">
+                <source>load summary</source>
+            </trans-unit>
+            <trans-unit id="element.summarypage.renderingOptions.previousButtonLabel">
+                <source>update</source>
             </trans-unit>
 
 
