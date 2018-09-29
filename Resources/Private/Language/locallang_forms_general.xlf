@@ -14,7 +14,7 @@
             <!-- ### LABELS, FIELDSETS, HEADINGS
                  Translation keys:
                  - element.<element-name>.properties.label
-                 - element.<element-type>.properties.<property-name>
+                 - element.<element-type>.properties.label
             -->
             <trans-unit id="element.title.properties.label">
                 <source>Title</source>
@@ -55,7 +55,9 @@
 
 
             <!-- ### PLACEHOLDER ATTRIBUTES
-                 Translation key: element.<element-name>.properties.placeholder
+                 Translation keys:
+                 - element.<element-name>.properties.placeholder
+                 - element.<element-type>.properties.placeholder
             -->
             <trans-unit id="element.firstname.properties.placeholder">
                 <source>Your first name</source>
