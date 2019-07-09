@@ -67,6 +67,18 @@
             <trans-unit id="ExtendedContactFormExample.finisher.Confirmation.message">
                 <source>Next time, we'll want to know some more about you!</source>
             </trans-unit>
+
+
+
+
+            <!-- ### VALIDATION ERROR MESSAGES
+                 ATTENTION: These will not work if you already set a custom message in your form definition!
+
+                 Translation key: <form-identifier>.validation.error.<error-code>
+            -->
+            <trans-unit id="BasicContactFormExample.validation.error.1221559976">
+                <source>Please enter valid email address. Thank you very much!</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

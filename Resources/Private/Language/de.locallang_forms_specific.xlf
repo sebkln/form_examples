@@ -78,6 +78,19 @@
                 <source>Next time, we'll want to know some more about you!</source>
                 <target>Nächstes Mal möchten wir etwas mehr über dich wissen!</target>
             </trans-unit>
+
+
+
+
+            <!-- ### VALIDATION ERROR MESSAGES
+                 ATTENTION: These will not work if you already set a custom message in your form definition!
+
+                 Translation key: <form-identifier>.validation.error.<error-code>
+            -->
+            <trans-unit id="BasicContactFormExample.validation.error.1221559976">
+                <source>Please enter valid email address. Thank you very much!</source>
+                <target>Bitte gebe eine gültige E-Mail-Adresse ein. Vielen herzlichen Dank!</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
