@@ -75,8 +75,8 @@ TYPO3:
 
 Do you need to get one step explained in detail? You can find a series of tutorials on the TYPO3 Form Framework here:
 
-1. [Assign custom templates to the new EXT:form framework](https://www.sklein-medien.de/en/tutorials/detail/assign-custom-templates-to-the-new-extform-framework/)
-2. [Different e-mail templates for EmailToSender and EmailToReceiver finishers in EXT:form](https://www.sklein-medien.de/en/tutorials/detail/different-e-mail-templates-for-emailtosender-and-emailtoreceiver-finishers-in-extform/)
-3. [Translating forms in the TYPO3 Form Framework](https://www.sklein-medien.de/en/tutorials/detail/translating-forms-in-the-typo3-form-framework/)
+1. [Assign custom templates to the new EXT:form framework](https://www.sebkln.de/en/tutorials/detail/assign-custom-templates-to-the-new-ext-form-framework/)
+2. [Different e-mail templates for EmailToSender and EmailToReceiver finishers in EXT:form](https://www.sebkln.de/en/tutorials/detail/different-e-mail-templates-for-emailtosender-and-emailtoreceiver-finishers-in-ext-form/)
+3. [Translating forms in the TYPO3 Form Framework](https://www.sebkln.de/en/tutorials/detail/translating-forms-in-the-typo3-form-framework/)
 
 All tutorials are available in both english and german language.
