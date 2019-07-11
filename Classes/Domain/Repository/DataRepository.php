@@ -8,7 +8,7 @@ namespace Sebkln\FormExamples\Domain\Repository;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- *  (c) 2017 Sebastian Klein <sebastian@sklein-medien.de>
+ *  (c) 2017 Sebastian Klein <sebastian@sebkln.de>
  *
  ***/
 
