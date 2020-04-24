@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Form examples',
-    'description' => 'Contains various examples how to use and customize the Form Framework introduced in TYPO3 v8.',
+    'description' => 'Contains various examples how to use and customize the TYPO3 Form Framework.',
     'category' => 'fe',
     'author' => 'Sebastian Klein',
     'author_email' => 'sebastian@sebkln.de',
