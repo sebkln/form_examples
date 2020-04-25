@@ -9,15 +9,13 @@ finishers:
   -
     options:
       subject: 'Your message: {subject}'
-      recipientAddress: your.company@example.com
-      recipientName: 'Your Company name'
       senderAddress: '{email}'
       senderName: '{firstname} {lastname}'
       replyToAddress: ''
-      carbonCopyAddress: ''
-      blindCarbonCopyAddress: ''
-      format: html
       attachUploads: true
+      recipients:
+        your.company@example.com: 'Your Company name'
+      addHtmlPart: true
     identifier: EmailToReceiver
   -
     options:

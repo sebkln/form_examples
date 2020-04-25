@@ -9,32 +9,28 @@ finishers:
   -
     options:
       subject: 'E-Mail from website'
-      recipientAddress: your.company@example.com
-      recipientName: 'Your Company name'
       senderAddress: '{email}'
       senderName: '{lastname}'
       replyToAddress: ''
-      carbonCopyAddress: ''
-      blindCarbonCopyAddress: ''
-      format: html
       attachUploads: true
+      recipients:
+        your.company@example.com: 'Your Company name'
+      addHtmlPart: true
     identifier: EmailToReceiver
   -
     options:
       subject: 'Your message'
-      recipientAddress: '{email}'
-      recipientName: '{lastname}'
       senderAddress: your.company@example.com
       senderName: 'Your Company name'
       replyToAddress: ''
-      carbonCopyAddress: ''
-      blindCarbonCopyAddress: ''
-      format: html
       attachUploads: true
-      # The following part enables us to use the customized template:
       templateName: '{@format}.html'
+      # The following part enables us to use the customized template:
       templateRootPaths:
         20: 'EXT:form_examples/Resources/Private/Forms/CustomHtmlMailExample/Sender/'
+      recipients:
+        '{email}': '{lastname}'
+      addHtmlPart: true
     identifier: EmailToSender
 renderables:
   -
