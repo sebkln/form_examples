@@ -39,7 +39,7 @@ The EXT:form Framework further supports a fallback chain for translations. You c
 - a specific form element and various forms
 - an element type and various forms, e.g. the `Page` element
 
-You can read the full details here: https://docs.typo3.org/typo3cms/extensions/form/8.7/Concepts/FrontendRendering/Index.html#translation
+You can read the full details here: https://docs.typo3.org/c/typo3/cms-form/master/en-us/I/Concepts/FrontendRendering/Index.html#concepts-frontendrendering-translation
 
 In this example extension, I split the translations in several files:
 - *locallang_forms_general.xlf*  contains translations for all forms in general.
@@ -61,10 +61,8 @@ TYPO3:
             Form:
               renderingOptions:
                 translation:
-                  translationFile:
-                    # Default translation file for the frontend:
-                    10: 'EXT:form/Resources/Private/Language/locallang.xlf'
-                    # Load your own translation file(s) as desired:
+                  translationFiles:
+                    # index '10' is reserved for the default translation file.
                     20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
                     30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
                     40: 'EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf'
