@@ -10,6 +10,9 @@ TYPO3:
       prototypes:
         ### PROTOTYPE: STANDARD
         standard:
+          formEditor:
+            translationFiles:
+              20: 'EXT:form_examples/Resources/Private/Language/Database.xlf'
           formElementsDefinition:
             Form:
               renderingOptions:
@@ -19,8 +22,25 @@ TYPO3:
                     20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
                     30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
                     40: 'EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf'
+                templateRootPaths:
+                  90: 'EXT:form_examples/Resources/Private/Forms/AllForms/Frontend/Templates/'
               formEditor:
                 editors:
+                  500:
+                    identifier: formStyleClass
+                    templateName: Inspector-SingleSelectEditor
+                    label: formEditor.elements.Form.editor.formStyleClass.label
+                    propertyPath: renderingOptions.formStyleClass
+                    selectOptions:
+                      10:
+                        value: ''
+                        label: formEditor.elements.Form.editor.formStyleClass.default.label
+                      20:
+                        value: survey
+                        label: formEditor.elements.Form.editor.formStyleClass.survey.label
+                      30:
+                        value: subscription
+                        label: formEditor.elements.Form.editor.formStyleClass.subscription.label
                   900:
                     selectOptions:
                       50:
