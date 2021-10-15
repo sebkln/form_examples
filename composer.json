@@ -29,5 +29,10 @@
 		"typo3/cms": {
 			"extension-key": "form_examples"
 		}
+	},
+	"autoload": {
+		"psr-4": {
+			"Sebkln\\FormExamples\\": "Classes/"
+		}
 	}
 }
