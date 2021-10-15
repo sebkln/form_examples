@@ -20,8 +20,8 @@ class DataController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * dataRepository
      *
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      * @var \Sebkln\FormExamples\Domain\Repository\DataRepository
-     * @inject
      */
     protected $dataRepository = null;
 
@@ -74,7 +74,7 @@ class DataController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * action edit
      *
      * @param \Sebkln\FormExamples\Domain\Model\Data $data
-     * @ignorevalidation $data
+     * @TYPO3\CMS\Extbase\Annotation\IgnoreValidation("data")
      * @return void
      */
     public function editAction(\Sebkln\FormExamples\Domain\Model\Data $data)
