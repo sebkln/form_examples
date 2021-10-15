@@ -132,8 +132,8 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * media
      *
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
      * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
-     * @cascade remove
      */
     protected $media = null;
 
