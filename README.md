@@ -3,6 +3,7 @@
 This TYPO3 extension ships some examples for the TYPO3 Form Framework.
 
 Since some configurations have changed between TYPO3 versions, you can choose the compatible version of this extension here:
+- [form_examples for TYPO3 v11](https://github.com/sebkln/form_examples/tree/11.5)
 - [form_examples for TYPO3 v10](https://github.com/sebkln/form_examples/tree/10.4)
 - [form_examples for TYPO3 v9](https://github.com/sebkln/form_examples/tree/9.5)
 - [form_examples for TYPO3 v8](https://github.com/sebkln/form_examples/tree/8.7)
