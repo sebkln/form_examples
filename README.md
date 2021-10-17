@@ -27,9 +27,12 @@ As this collection of examples might get bloated, you can get a minimal starter 
 ### Upload form
 - **SaveToDatabase** finisher, works the same as above
 
-### Custom HTML mail
-- custom HTML mail template, based on a blueprint by MailChimp – not yet tested in every mail client (it's still an example)
-- personalized salutation in email, depending on selected title
+### Customized FluidEmail templates
+- This example demonstrates how to override Fluid templates **and** layouts for emails.
+- Two custom HTML mail templates, both using the Fluid-based email templating of the TYPO3 core (available since 10.3):
+  1. Email template with name identical to TYPO3 core, which makes it the new default mail template.
+  2. Email template with custom name, that can be assigned to a specific mail finisher in a form definition.
+- Personalized salutation in email, depending on the selected title in the form.
 
 
 ## Translating forms
