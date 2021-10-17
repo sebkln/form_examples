@@ -14,17 +14,41 @@
                 <source>Dear Ms %s,</source>
                 <target>Sehr geehrte Frau %s,</target>
             </trans-unit>
-            <trans-unit id="email.CustomHtmlMailExample.thankyouMessage">
-                <source><![CDATA[<p>thank you for your message. We will contact you as soon as possible.</p><p>Enclosed you will find your message sent to us.</p>]]></source>
-                <target><![CDATA[<p>vielen Dank für Ihre Nachricht! Wir werden uns schnellstmöglich bei Ihnen melden.</p><p>Anbei finden Sie eine Kopie Ihrer Nachricht.</p>]]></target>
+            <trans-unit id="email.thankyouMessage">
+                <source>thank you for your message. We will contact you as soon as possible.
+
+Enclosed you will find your message sent to us.</source>
+                <target>vielen Dank für Ihre Nachricht! Wir werden uns schnellstmöglich bei Ihnen melden.
+
+Anbei finden Sie eine Kopie Ihrer Nachricht.</target>
+            </trans-unit>
+            <trans-unit id="email.receiver.introduction">
+                <source>The following message was sent via the contact form on our website:</source>
+                <target>Die folgende Nachricht wurde über das Kontaktformular unserer Website versendet:</target>
             </trans-unit>
             <trans-unit id="email.complimentaryClose">
-                <source><![CDATA[<p>Yours sincerely,<br>ACME Ltd.</p>]]></source>
-                <target><![CDATA[<p>Mit freundlichen Grüßen,<br>Ihre ACME GmbH</p>]]></target>
+                <source>Yours sincerely,
+ACME Inc.</source>
+                <target>Mit freundlichen Grüßen,
+Ihre ACME Inc.</target>
             </trans-unit>
             <trans-unit id="email.yourMessageToUs">
                 <source>Your message to us:</source>
                 <target>Ihre Nachricht an uns:</target>
+            </trans-unit>
+            <trans-unit id="email.footer.note.customization">
+                <source>This email uses a customized Fluid template and layout.</source>
+                <target>Diese E-Mail verwendet ein benutzerdefiniertes Fluid-Template und -Layout.</target>
+            </trans-unit>
+            <trans-unit id="email.footer.note.defaultLayout">
+                <source>The default file names are used: "Default" (.html/.txt) for the Fluid template; "SystemEmail" (.html/.txt) for the Fluid layout.</source>
+                <target>Die Standard-Dateinamen werden verwendet: "Default" (.html/.txt) für das Fluid-Template; "SystemEmail" (.html/.txt) für das Fluid-Layout.</target>
+            </trans-unit>
+            <trans-unit id="email.footer.note.customReceiverLayout">
+                <source><![CDATA[All files have custom names: "CustomReceiverTemplate" (.html/.txt) for the Fluid template; "CustomReceiverLayout" (.html/.txt) for the Fluid layout.
+The file names are assigned manually: "CustomReceiverTemplate" in the Email finisher (form definition). The "CustomReceiverLayout" in the <f:layout> ViewHelper of the Fluid template.]]></source>
+                <target><![CDATA[Alle Dateien haben benutzerdefinierte Namen: "CustomReceiverTemplate" (.html/.txt) für das Fluid-Template; "CustomReceiverLayout" (.html/.txt) für das Fluid-Layout.
+Die Dateinamen werden manuell zugewiesen: "CustomReceiverTemplate" im Email-Finisher (Formular-Definition). Das "CustomReceiverLayout" im <f:layout> ViewHelper der Fluid-Vorlage.]]></target>
             </trans-unit>
         </body>
     </file>

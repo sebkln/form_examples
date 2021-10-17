@@ -120,8 +120,8 @@
                  Translation key: finisher.<finisher-identifier>.<option-name>
             -->
             <trans-unit id="finisher.EmailToSender.subject">
-                <source>Your message to ACME Ltd.</source>
-                <target>Ihre Nachricht an die ACME GmbH</target>
+                <source>Your message to ACME Inc.</source>
+                <target>Ihre Nachricht an die ACME Inc.</target>
             </trans-unit>
             <trans-unit id="finisher.EmailToReceiver.subject">
                 <source>Message from website</source>

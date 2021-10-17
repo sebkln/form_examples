@@ -103,7 +103,7 @@
                  Translation key: finisher.<finisher-identifier>.<option-name>
             -->
             <trans-unit id="finisher.EmailToSender.subject">
-                <source>Your message to ACME Ltd.</source>
+                <source>Your message to ACME Inc.</source>
             </trans-unit>
             <trans-unit id="finisher.EmailToReceiver.subject">
                 <source>Message from website</source>
