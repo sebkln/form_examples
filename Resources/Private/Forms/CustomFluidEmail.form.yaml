@@ -1,33 +1,34 @@
 
 renderingOptions:
   submitButtonLabel: Submit
-identifier: CustomHtmlMailExample
-label: 'Custom HTML mail example'
+identifier: CustomFluidEmail
+label: 'Custom FluidEmail templates'
 type: Form
 prototypeName: standard
 finishers:
   -
     options:
+      # Special email template, used only for the receiver:
+      templateName: CustomReceiverTemplate
+      useFluidEmail: true
       subject: 'E-Mail from website'
       senderAddress: '{email}'
       senderName: '{lastname}'
-      replyToAddress: ''
       attachUploads: true
       recipients:
-        your.company@example.com: 'Your Company name'
+        info@example.com: 'ACME Inc.'
       addHtmlPart: true
     identifier: EmailToReceiver
   -
     options:
-      subject: 'Your message'
-      senderAddress: your.company@example.com
-      senderName: 'Your Company name'
-      replyToAddress: ''
+      # Using a Fluid email template. As no "templateName" option is set, the default name is used.
+      useFluidEmail: true
+      # Nonetheless, a customized template will be sent, as we copied the "Default" templates from EXT:form
+      # to this extension and registered the template path in "ext_localconf.php".
+      subject: 'Your message to ACME'
+      senderAddress: noreply@example.com
+      senderName: 'ACME Inc.'
       attachUploads: true
-      templateName: '{@format}.html'
-      # The following part enables us to use the customized template:
-      templateRootPaths:
-        20: 'EXT:form_examples/Resources/Private/Forms/CustomHtmlMailExample/Sender/'
       recipients:
         '{email}': '{lastname}'
       addHtmlPart: true
