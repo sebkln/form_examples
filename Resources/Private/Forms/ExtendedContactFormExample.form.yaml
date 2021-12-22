@@ -62,8 +62,6 @@ finishers:
             mapOnDatabaseColumn: www
           birth-certificate:
             mapOnDatabaseColumn: media
-          pagetitle:
-            mapOnDatabaseColumn: pagetitle
       -
         table: sys_file_reference
         mode: insert
@@ -71,6 +69,8 @@ finishers:
           birth-certificate:
             mapOnDatabaseColumn: uid_local
         databaseColumnMappings:
+          pid:
+            value: 21
           table_local:
             value: sys_file
           tablenames:
@@ -270,11 +270,6 @@ renderables:
             validators:
               -
                 identifier: NotEmpty
-          -
-            defaultValue: ''
-            type: Hidden
-            identifier: pagetitle
-            label: 'Page title'
   -
     renderingOptions:
       previousButtonLabel: 'Previous step'

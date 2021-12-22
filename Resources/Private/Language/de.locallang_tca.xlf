@@ -8,13 +8,33 @@
                 <source>Submitted form data</source>
                 <target>Übermittelte Formulardaten</target>
             </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.formtitle">
+                <source>Form</source>
+                <target>Formular</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.person">
+                <source>Person</source>
+                <target>Person</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.address">
+                <source>Address data</source>
+                <target>Adressdaten</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.contactinfo">
+                <source>Contact information</source>
+                <target>Kontaktdaten</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.communication">
+                <source>Message</source>
+                <target>Nachricht</target>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.file">
+                <source>File attachments</source>
+                <target>Dateianhänge</target>
+            </trans-unit>
             <trans-unit id="tx_formexamples_domain_model_data.formtitle">
                 <source>Title of the used form</source>
                 <target>Name des verwendeten Formulars</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.pagetitle">
-                <source>Page from which was submitted</source>
-                <target>Seite, von der abgesendet wurde</target>
             </trans-unit>
             <trans-unit id="tx_formexamples_domain_model_data.firstname">
                 <source>First name</source>
