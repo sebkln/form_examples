@@ -30,6 +30,8 @@ finishers:
           fileupload:
             mapOnDatabaseColumn: uid_local
         databaseColumnMappings:
+          pid:
+            value: 21
           table_local:
             value: sys_file
           tablenames:
