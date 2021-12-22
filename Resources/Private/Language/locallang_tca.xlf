@@ -6,11 +6,26 @@
             <trans-unit id="tx_formexamples_domain_model_data">
                 <source>Submitted form data</source>
             </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.formtitle">
+                <source>Form</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.person">
+                <source>Person</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.address">
+                <source>Address data</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.contactinfo">
+                <source>Contact information</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.communication">
+                <source>Message</source>
+            </trans-unit>
+            <trans-unit id="tx_formexamples_domain_model_data.palette.file">
+                <source>File attachments</source>
+            </trans-unit>
             <trans-unit id="tx_formexamples_domain_model_data.formtitle">
                 <source>Title of the used form</source>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.pagetitle">
-                <source>Page from which was submitted</source>
             </trans-unit>
             <trans-unit id="tx_formexamples_domain_model_data.firstname">
                 <source>First name</source>
