@@ -50,6 +50,18 @@ TYPO3:
                         value: 'SaveToDatabase'
                         label: 'formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label'
           finishersDefinition:
+            EmailToReceiver:
+              options:
+                templateRootPaths:
+                  20: 'EXT:form_examples/Resources/Private/Templates/Email/'
+                layoutRootPaths:
+                  20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
+            EmailToSender:
+              options:
+                templateRootPaths:
+                  20: 'EXT:form_examples/Resources/Private/Templates/Email/'
+                layoutRootPaths:
+                  20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
             Confirmation:
               FormEngine:
                 label: 'formEditor.element.AdvancedPassword.editor.confirmationLabel.predefinedDefaults'

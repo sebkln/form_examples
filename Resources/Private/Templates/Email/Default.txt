@@ -1,4 +1,4 @@
-<f:layout name="SystemEmail" />
+<f:layout name="FormEmail" />
 <f:section name="Title">{title}</f:section>
 <f:section name="Main">
 <f:comment>
