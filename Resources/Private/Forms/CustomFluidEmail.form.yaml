@@ -24,7 +24,7 @@ finishers:
       # Using a Fluid email template. As no "templateName" option is set, the default name is used.
       useFluidEmail: true
       # Nonetheless, a customized template will be sent, as we copied the "Default" templates from EXT:form
-      # to this extension and registered the template path in "ext_localconf.php".
+      # to this extension and registered the template path in "CustomFormSetup.yaml".
       subject: 'Your message to ACME'
       senderAddress: noreply@example.com
       senderName: 'ACME Inc.'
