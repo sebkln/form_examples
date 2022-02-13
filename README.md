@@ -34,6 +34,7 @@ As this collection of examples might get bloated, you can get a minimal starter 
   1. Email template with name identical to TYPO3 core, which makes it the new default mail template.
   2. Email template with custom name, that can be assigned to a specific mail finisher in a form definition.
 - Personalized salutation in email, depending on the selected title in the form.
+- For all newly added email finishers, FluidEmail ist enabled by default.
 
 
 ## Translating forms
