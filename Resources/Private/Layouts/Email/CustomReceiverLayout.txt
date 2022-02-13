@@ -5,6 +5,4 @@
 
 <f:format.nl2br><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.footer.note.customReceiverLayout"/></f:format.nl2br>
 
-This email was sent by {typo3.sitename} from URL: {normalizedParams.siteUrl}
-
 Please contact your site administrator if you feel you received this email by accident.

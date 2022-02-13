@@ -31,7 +31,7 @@ ACME Inc.</source>
                 <source>This email uses a customized Fluid template and layout.</source>
             </trans-unit>
             <trans-unit id="email.footer.note.defaultLayout">
-                <source>The default file names are used: "Default" (.html/.txt) for the Fluid template; "SystemEmail" (.html/.txt) for the Fluid layout.</source>
+                <source><![CDATA[For the Fluid template (.html/.txt), the default file name "Default" ist used. The Fluid layout has the self-selected name "FormEmail" (.html/.txt) which is assigned with the <f:layout> ViewHelper in the Fluid template.]]></source>
             </trans-unit>
             <trans-unit id="email.footer.note.customReceiverLayout">
                 <source><![CDATA[All files have custom names: "CustomReceiverTemplate" (.html/.txt) for the Fluid template; "CustomReceiverLayout" (.html/.txt) for the Fluid layout.

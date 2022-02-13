@@ -41,8 +41,8 @@ Ihre ACME Inc.</target>
                 <target>Diese E-Mail verwendet ein benutzerdefiniertes Fluid-Template und -Layout.</target>
             </trans-unit>
             <trans-unit id="email.footer.note.defaultLayout">
-                <source>The default file names are used: "Default" (.html/.txt) for the Fluid template; "SystemEmail" (.html/.txt) for the Fluid layout.</source>
-                <target>Die Standard-Dateinamen werden verwendet: "Default" (.html/.txt) für das Fluid-Template; "SystemEmail" (.html/.txt) für das Fluid-Layout.</target>
+                <source><![CDATA[For the Fluid template (.html/.txt), the default file name "Default" ist used. The Fluid layout has the self-selected name "FormEmail" (.html/.txt) which is assigned with the <f:layout> ViewHelper in the Fluid template.]]></source>
+                <target><![CDATA[Für das Fluid-Template wird der Standard-Dateiname "Default" verwendet. Das Fluid-Layout besitzt den selbstgewählten Namen "FormEmail" (.html/.txt), der mit dem <f:layout> ViewHelper im Fluid-Template zugewiesen wird.]]></target>
             </trans-unit>
             <trans-unit id="email.footer.note.customReceiverLayout">
                 <source><![CDATA[All files have custom names: "CustomReceiverTemplate" (.html/.txt) for the Fluid template; "CustomReceiverLayout" (.html/.txt) for the Fluid layout.
