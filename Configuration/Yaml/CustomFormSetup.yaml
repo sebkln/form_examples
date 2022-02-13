@@ -51,17 +51,27 @@ TYPO3:
                         label: 'formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label'
           finishersDefinition:
             EmailToReceiver:
+              # These root paths will be used for email finishers in all form definitions:
               options:
                 templateRootPaths:
                   20: 'EXT:form_examples/Resources/Private/Templates/Email/'
                 layoutRootPaths:
                   20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
+              # Enable FluidEmail for all newly added email finishers:
+              formEditor:
+                predefinedDefaults:
+                  options:
+                    useFluidEmail: true
             EmailToSender:
               options:
                 templateRootPaths:
                   20: 'EXT:form_examples/Resources/Private/Templates/Email/'
                 layoutRootPaths:
                   20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
+              formEditor:
+                predefinedDefaults:
+                  options:
+                    useFluidEmail: true
             Confirmation:
               FormEngine:
                 label: 'formEditor.element.AdvancedPassword.editor.confirmationLabel.predefinedDefaults'
