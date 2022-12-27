@@ -1,96 +1,93 @@
-TYPO3:
-  CMS:
-    Form:
-      persistenceManager:
-        allowedExtensionPaths:
-          999: EXT:form_examples/Resources/Private/Forms/
-        allowSaveToExtensionPaths: true
-        allowDeleteFromExtensionPaths: true
+persistenceManager:
+  allowedExtensionPaths:
+    999: EXT:form_examples/Resources/Private/Forms/
+  allowSaveToExtensionPaths: true
+  allowDeleteFromExtensionPaths: true
 
-      prototypes:
-        ### PROTOTYPE: STANDARD
-        standard:
-          formEditor:
+prototypes:
+  ### PROTOTYPE: STANDARD
+  standard:
+    formEditor:
+      translationFiles:
+        20: 'EXT:form_examples/Resources/Private/Language/Database.xlf'
+    formElementsDefinition:
+      Form:
+        renderingOptions:
+          translation:
             translationFiles:
-              20: 'EXT:form_examples/Resources/Private/Language/Database.xlf'
-          formElementsDefinition:
-            Form:
-              renderingOptions:
-                translation:
-                  translationFiles:
-                    # index '10' is reserved for the default translation file.
-                    20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
-                    30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
-                    40: 'EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf'
-                templateRootPaths:
-                  90: 'EXT:form_examples/Resources/Private/Forms/AllForms/Frontend/Templates/'
-              formEditor:
-                editors:
-                  500:
-                    identifier: formStyleClass
-                    templateName: Inspector-SingleSelectEditor
-                    label: formEditor.elements.Form.editor.formStyleClass.label
-                    propertyPath: renderingOptions.formStyleClass
-                    selectOptions:
-                      10:
-                        value: ''
-                        label: formEditor.elements.Form.editor.formStyleClass.default.label
-                      20:
-                        value: survey
-                        label: formEditor.elements.Form.editor.formStyleClass.survey.label
-                      30:
-                        value: subscription
-                        label: formEditor.elements.Form.editor.formStyleClass.subscription.label
-                  900:
-                    selectOptions:
-                      50:
-                        value: 'Confirmation'
-                        label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
-                      60:
-                        value: 'SaveToDatabase'
-                        label: 'formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label'
-          finishersDefinition:
-            EmailToReceiver:
-              # These root paths will be used for email finishers in all form definitions:
-              options:
-                templateRootPaths:
-                  20: 'EXT:form_examples/Resources/Private/Templates/Email/'
-                layoutRootPaths:
-                  20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
-              # Enable FluidEmail for all newly added email finishers:
-              formEditor:
-                predefinedDefaults:
-                  options:
-                    useFluidEmail: true
-            EmailToSender:
-              options:
-                templateRootPaths:
-                  20: 'EXT:form_examples/Resources/Private/Templates/Email/'
-                layoutRootPaths:
-                  20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
-              formEditor:
-                predefinedDefaults:
-                  options:
-                    useFluidEmail: true
-            Confirmation:
-              FormEngine:
-                label: 'formEditor.element.AdvancedPassword.editor.confirmationLabel.predefinedDefaults'
-                elements:
-                  message:
-                    label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
-                    config:
-                      type: 'input'
+              # index '10' is reserved for the default translation file.
+              20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
+              30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
+              40: 'EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf'
+          templateRootPaths:
+            90: 'EXT:form_examples/Resources/Private/Forms/AllForms/Frontend/Templates/'
+        formEditor:
+          editors:
+            500:
+              identifier: formStyleClass
+              templateName: Inspector-SingleSelectEditor
+              label: formEditor.elements.Form.editor.formStyleClass.label
+              propertyPath: renderingOptions.formStyleClass
+              selectOptions:
+                10:
+                  value: ''
+                  label: formEditor.elements.Form.editor.formStyleClass.default.label
+                20:
+                  value: survey
+                  label: formEditor.elements.Form.editor.formStyleClass.survey.label
+                30:
+                  value: subscription
+                  label: formEditor.elements.Form.editor.formStyleClass.subscription.label
+            900:
+              selectOptions:
+                50:
+                  value: 'Confirmation'
+                  label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
+                60:
+                  value: 'SaveToDatabase'
+                  label: 'formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label'
+    finishersDefinition:
+      EmailToReceiver:
+        # These root paths will be used for email finishers in all form definitions:
+        options:
+          templateRootPaths:
+            20: 'EXT:form_examples/Resources/Private/Templates/Email/'
+          layoutRootPaths:
+            20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
+        # Enable FluidEmail for all newly added email finishers:
+        formEditor:
+          predefinedDefaults:
+            options:
+              useFluidEmail: true
+      EmailToSender:
+        options:
+          templateRootPaths:
+            20: 'EXT:form_examples/Resources/Private/Templates/Email/'
+          layoutRootPaths:
+            20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
+        formEditor:
+          predefinedDefaults:
+            options:
+              useFluidEmail: true
+      Confirmation:
+        FormEngine:
+          label: 'formEditor.element.AdvancedPassword.editor.confirmationLabel.predefinedDefaults'
+          elements:
+            message:
+              label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
+              config:
+                type: 'input'
 
-        ### PROTOTYPE: BASIC CONTACT FORM EXAMPLE
-        basicContactFormExample:
-          __inheritances:
-            10: 'TYPO3.CMS.Form.prototypes.standard'
-          formElementsDefinition:
-            Form:
-              renderingOptions:
-                templateRootPaths:
-                  100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Templates/'
-                partialRootPaths:
-                  100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Partials/'
-                layoutRootPaths:
-                  100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Layouts/'
+  ### PROTOTYPE: BASIC CONTACT FORM EXAMPLE
+  basicContactFormExample:
+    __inheritances:
+      10: 'TYPO3.CMS.Form.prototypes.standard'
+    formElementsDefinition:
+      Form:
+        renderingOptions:
+          templateRootPaths:
+            100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Templates/'
+          partialRootPaths:
+            100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Partials/'
+          layoutRootPaths:
+            100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Layouts/'
