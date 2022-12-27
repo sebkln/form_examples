@@ -6,15 +6,15 @@
             <!-- ### CUSTOM VALUES IN FORMS
                  Translation keys: all up to you
             -->
-            <trans-unit id="email.salutation.male">
+            <trans-unit id="email.salutation.male" approved="yes">
                 <source>Dear Mr %s,</source>
                 <target>Sehr geehrter Herr %s,</target>
             </trans-unit>
-            <trans-unit id="email.salutation.female">
+            <trans-unit id="email.salutation.female" approved="yes">
                 <source>Dear Ms %s,</source>
                 <target>Sehr geehrte Frau %s,</target>
             </trans-unit>
-            <trans-unit id="email.thankyouMessage">
+            <trans-unit id="email.thankyouMessage" approved="yes">
                 <source>thank you for your message. We will contact you as soon as possible.
 
 Enclosed you will find your message sent to us.</source>
@@ -22,29 +22,29 @@ Enclosed you will find your message sent to us.</source>
 
 Anbei finden Sie eine Kopie Ihrer Nachricht.</target>
             </trans-unit>
-            <trans-unit id="email.receiver.introduction">
+            <trans-unit id="email.receiver.introduction" approved="yes">
                 <source>The following message was sent via the contact form on our website:</source>
                 <target>Die folgende Nachricht wurde über das Kontaktformular unserer Website versendet:</target>
             </trans-unit>
-            <trans-unit id="email.complimentaryClose">
+            <trans-unit id="email.complimentaryClose" approved="yes">
                 <source>Yours sincerely,
 ACME Inc.</source>
                 <target>Mit freundlichen Grüßen,
 Ihre ACME Inc.</target>
             </trans-unit>
-            <trans-unit id="email.yourMessageToUs">
+            <trans-unit id="email.yourMessageToUs" approved="yes">
                 <source>Your message to us:</source>
                 <target>Ihre Nachricht an uns:</target>
             </trans-unit>
-            <trans-unit id="email.footer.note.customization">
+            <trans-unit id="email.footer.note.customization" approved="yes">
                 <source>This email uses a customized Fluid template and layout.</source>
                 <target>Diese E-Mail verwendet ein benutzerdefiniertes Fluid-Template und -Layout.</target>
             </trans-unit>
-            <trans-unit id="email.footer.note.defaultLayout">
+            <trans-unit id="email.footer.note.defaultLayout" approved="yes">
                 <source><![CDATA[For the Fluid template (.html/.txt), the default file name "Default" ist used. The Fluid layout has the self-selected name "FormEmail" (.html/.txt) which is assigned with the <f:layout> ViewHelper in the Fluid template.]]></source>
                 <target><![CDATA[Für das Fluid-Template wird der Standard-Dateiname "Default" verwendet. Das Fluid-Layout besitzt den selbstgewählten Namen "FormEmail" (.html/.txt), der mit dem <f:layout> ViewHelper im Fluid-Template zugewiesen wird.]]></target>
             </trans-unit>
-            <trans-unit id="email.footer.note.customReceiverLayout">
+            <trans-unit id="email.footer.note.customReceiverLayout" approved="yes">
                 <source><![CDATA[All files have custom names: "CustomReceiverTemplate" (.html/.txt) for the Fluid template; "CustomReceiverLayout" (.html/.txt) for the Fluid layout.
 The file names are assigned manually: "CustomReceiverTemplate" in the Email finisher (form definition). The "CustomReceiverLayout" in the <f:layout> ViewHelper of the Fluid template.]]></source>
                 <target><![CDATA[Alle Dateien haben benutzerdefinierte Namen: "CustomReceiverTemplate" (.html/.txt) für das Fluid-Template; "CustomReceiverLayout" (.html/.txt) für das Fluid-Layout.

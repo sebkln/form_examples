@@ -6,19 +6,19 @@
             <!-- ### LABELS, FIELDSETS, HEADINGS
                  Translation key: <form-identifier>.element.<element-name>.properties.label
             -->
-            <trans-unit id="BasicContactFormExample.element.page-1.properties.label">
+            <trans-unit id="BasicContactFormExample.element.page-1.properties.label" approved="yes">
                 <source>Basic contact form</source>
                 <target>Einfaches Kontaktformular</target>
             </trans-unit>
-            <trans-unit id="BasicContactFormExample.element.name.properties.label">
+            <trans-unit id="BasicContactFormExample.element.name.properties.label" approved="yes">
                 <source>Name and surname</source>
                 <target>Vor- und Nachname</target>
             </trans-unit>
-            <trans-unit id="BasicContactFormExample.element.subject.properties.label">
+            <trans-unit id="BasicContactFormExample.element.subject.properties.label" approved="yes">
                 <source>Subject</source>
                 <target>Betreff</target>
             </trans-unit>
-            <trans-unit id="BasicContactFormExample.element.message.properties.label">
+            <trans-unit id="BasicContactFormExample.element.message.properties.label" approved="yes">
                 <source>Your message</source>
                 <target>Ihre Nachricht</target>
             </trans-unit>
@@ -29,15 +29,15 @@
             <!-- ### PLACEHOLDER ATTRIBUTES
                  Translation key: <form-identifier>.element.<element-name>.properties.placeholder
             -->
-            <trans-unit id="BasicContactFormExample.element.name.properties.placeholder">
+            <trans-unit id="BasicContactFormExample.element.name.properties.placeholder" approved="yes">
                 <source>John Doe</source>
                 <target>Michael Mustermann</target>
             </trans-unit>
-            <trans-unit id="BasicContactFormExample.element.subject.properties.placeholder">
+            <trans-unit id="BasicContactFormExample.element.subject.properties.placeholder" approved="yes">
                 <source>Your concern</source>
                 <target>Ihr Anliegen</target>
             </trans-unit>
-            <trans-unit id="BasicContactFormExample.element.message.properties.placeholder">
+            <trans-unit id="BasicContactFormExample.element.message.properties.placeholder" approved="yes">
                 <source>How can we be of help?</source>
                 <target>Wie können wir Ihnen behilflich sein?</target>
             </trans-unit>
@@ -55,15 +55,15 @@
                  - <form-identifier>.element.<element-identifier>.renderingOptions.previousButtonLabel
                  - element.<element-identifier>.renderingOptions.previousButtonLabel
             -->
-            <trans-unit id="element.BasicContactFormExample.renderingOptions.submitButtonLabel">
+            <trans-unit id="element.BasicContactFormExample.renderingOptions.submitButtonLabel" approved="yes">
                 <source>Send message!</source>
                 <target>Nachricht senden!</target>
             </trans-unit>
-            <trans-unit id="BasicContactFormExample.element.page-1.renderingOptions.nextButtonLabel">
+            <trans-unit id="BasicContactFormExample.element.page-1.renderingOptions.nextButtonLabel" approved="yes">
                 <source>load summary</source>
                 <target>zur Übersicht</target>
             </trans-unit>
-            <trans-unit id="element.summarypage.renderingOptions.previousButtonLabel">
+            <trans-unit id="element.summarypage.renderingOptions.previousButtonLabel" approved="yes">
                 <source>update</source>
                 <target>verbessern</target>
             </trans-unit>
@@ -74,7 +74,7 @@
             <!-- ### FINISHERS
                  Translation key: <form-identifier>.finisher.<finisher-identifier>.<option-name>
             -->
-            <trans-unit id="ExtendedContactFormExample.finisher.Confirmation.message">
+            <trans-unit id="ExtendedContactFormExample.finisher.Confirmation.message" approved="yes">
                 <source>Next time, we'll want to know some more about you!</source>
                 <target>Nächstes Mal möchten wir etwas mehr über dich wissen!</target>
             </trans-unit>
@@ -87,7 +87,7 @@
 
                  Translation key: <form-identifier>.validation.error.<error-code>
             -->
-            <trans-unit id="BasicContactFormExample.validation.error.1221559976">
+            <trans-unit id="BasicContactFormExample.validation.error.1221559976" approved="yes">
                 <source>Please enter valid email address. Thank you very much!</source>
                 <target>Bitte gebe eine gültige E-Mail-Adresse ein. Vielen herzlichen Dank!</target>
             </trans-unit>

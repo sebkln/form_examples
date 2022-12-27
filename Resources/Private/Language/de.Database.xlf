@@ -6,19 +6,19 @@
             <!-- ### FORM EDITOR LABELS (TYPO3 backend)
                  Translation keys: as set in your custom form setup
             -->
-            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.label">
+            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.label" approved="yes">
                 <source>Form styling</source>
                 <target>Formular-Design</target>
             </trans-unit>
-            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.default.label">
+            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.default.label" approved="yes">
                 <source>Contact form</source>
                 <target>Kontaktformular</target>
             </trans-unit>
-            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.survey.label">
+            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.survey.label" approved="yes">
                 <source>Survey</source>
                 <target>Umfrage</target>
             </trans-unit>
-            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.subscription.label">
+            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.subscription.label" approved="yes">
                 <source>Newsletter subscription</source>
                 <target>Newsletter-Abonnement</target>
             </trans-unit>
