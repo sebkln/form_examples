@@ -19,7 +19,7 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": ">=11.5.0 <11.5.99"
+		"typo3/cms-core": ">=12.0.0 <12.4.99"
 	},
 	"extra": {
 		"typo3/cms": {
