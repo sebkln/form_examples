@@ -6,9 +6,11 @@ return [
         'label_userFunc' => 'Sebkln\\FormExamples\\UserFunc\\Tca->formDataLabel',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'delete' => 'deleted',
         'searchFields' => 'formtitle,firstname,lastname,company,title,email,address,zip,city,country,www,telephone,fax,subject,message,media',
+        'security' => [
+            'ignorePageTypeRestriction' => true,
+        ],
         'iconfile' => 'EXT:form_examples/Resources/Public/Icons/form-examples-data.svg'
     ],
     'types' => [
@@ -189,11 +191,7 @@ return [
         'media' => [
             'label' => 'LLL:EXT:form_examples/Resources/Private/Language/locallang_tca.xlf:tx_formexamples_domain_model_data.media',
             'config' => [
-                'type' => 'inline',
-                'foreign_table' => 'sys_file_reference',
-                'foreign_field' => 'uid_foreign',
-                'foreign_sortby' => 'sorting_foreign',
-                'foreign_table_field' => 'tablenames',
+                'type' => 'file',
                 'readOnly' => 1,
                 'appearance' => [
                     'useSortable' => true,
