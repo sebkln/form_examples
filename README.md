@@ -64,20 +64,17 @@ Learn all about the fallback order in the link above.
 To use your translation files, you must load them in your custom form setup first (as done in this extension):
 
 ````yaml
-TYPO3:
-  CMS:
-    Form:
-      prototypes:
-        standard:
-          formElementsDefinition:
-            Form:
-              renderingOptions:
-                translation:
-                  translationFiles:
-                    # index '10' is reserved for the default translation file.
-                    20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
-                    30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
-                    40: 'EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf'
+prototypes:
+  standard:
+    formElementsDefinition:
+      Form:
+        renderingOptions:
+          translation:
+            translationFiles:
+              # index '10' is reserved for the default translation file.
+              20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
+              30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
+              40: 'EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf'
 ````
 
 
