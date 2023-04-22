@@ -3,7 +3,7 @@ renderingOptions:
   submitButtonLabel: Submit
 type: Form
 identifier: ExtendedContactFormExample
-label: 'Extended contact form example'
+label: 'Example - Extended contact form'
 prototypeName: standard
 finishers:
   -

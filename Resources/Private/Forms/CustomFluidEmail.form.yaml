@@ -2,7 +2,7 @@
 renderingOptions:
   submitButtonLabel: Submit
 identifier: CustomFluidEmail
-label: 'Custom FluidEmail templates'
+label: 'Example - Custom FluidEmail templates'
 type: Form
 prototypeName: standard
 finishers:
