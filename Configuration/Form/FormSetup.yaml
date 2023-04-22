@@ -38,14 +38,6 @@ prototypes:
                 30:
                   value: subscription
                   label: formEditor.elements.Form.editor.formStyleClass.subscription.label
-            900:
-              selectOptions:
-                50:
-                  value: 'Confirmation'
-                  label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
-                60:
-                  value: 'SaveToDatabase'
-                  label: 'formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label'
     finishersDefinition:
       EmailToReceiver:
         # These root paths will be used for email finishers in all form definitions:
@@ -60,14 +52,6 @@ prototypes:
             20: 'EXT:form_examples/Resources/Private/Templates/Email/'
           layoutRootPaths:
             20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
-      Confirmation:
-        FormEngine:
-          label: 'formEditor.element.AdvancedPassword.editor.confirmationLabel.predefinedDefaults'
-          elements:
-            message:
-              label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
-              config:
-                type: 'input'
 
   ### PROTOTYPE: BASIC CONTACT FORM EXAMPLE
   basicContactFormExample:
