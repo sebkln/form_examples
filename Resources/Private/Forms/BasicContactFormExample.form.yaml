@@ -2,7 +2,7 @@
 renderingOptions:
   submitButtonLabel: Submit
 identifier: BasicContactFormExample
-label: 'Basic contact form example'
+label: 'Example - Basic contact form'
 type: Form
 prototypeName: basicContactFormExample
 finishers:
