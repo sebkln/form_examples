@@ -13,7 +13,7 @@ finishers:
         mode: insert
         databaseColumnMappings:
           pid:
-            value: 21
+            value: 140
           crdate:
             value: '{__currentTimestamp}'
           tstamp:
@@ -31,7 +31,7 @@ finishers:
             mapOnDatabaseColumn: uid_local
         databaseColumnMappings:
           pid:
-            value: 21
+            value: 140
           table_local:
             value: sys_file
           tablenames:
