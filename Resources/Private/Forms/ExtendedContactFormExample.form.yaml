@@ -11,7 +11,6 @@ finishers:
       subject: 'Your message: {subject}'
       senderAddress: '{email}'
       senderName: '{firstname} {lastname}'
-      replyToAddress: ''
       attachUploads: true
       recipients:
         your.company@example.com: 'Your Company name'
