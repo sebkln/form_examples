@@ -9,17 +9,17 @@
 </f:comment>
 
 <f:switch expression="{form.formState.formValues.title}">
-    <f:case value="male"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.salutation.male" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
-    <f:case value="female"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.salutation.female" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
+    <f:case value="male"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.male" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
+    <f:case value="female"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.female" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
     <f:defaultCase>Dear Sir or Madam,</f:defaultCase>
 </f:switch>
 
-<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.thankyouMessage"/>
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.thankyouMessage"/>
 
-<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.complimentaryClose"/>
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.complimentaryClose"/>
 
 
-<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.yourMessageToUs"/>
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.yourMessageToUs"/>
 <f:comment>
 <!--
     Form content, rendered as table (identical to original EXT:form Email template)

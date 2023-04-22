@@ -11,22 +11,22 @@
     <p>
         <f:switch expression="{form.formState.formValues.title}">
             <f:case value="male">
-                <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.salutation.male"
+                <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.male"
                         arguments="{0: '{form.formState.formValues.lastname}'}"/>
             </f:case>
             <f:case value="female">
-                <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.salutation.female"
+                <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.female"
                         arguments="{0: '{form.formState.formValues.lastname}'}"/>
             </f:case>
             <f:defaultCase>Dear Sir or Madam,</f:defaultCase>
         </f:switch>
     </p>
 
-    <p><f:format.nl2br><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.thankyouMessage"/></f:format.nl2br></p>
-    <p><f:format.nl2br><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.complimentaryClose"/></f:format.nl2br></p>
+    <p><f:format.nl2br><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.thankyouMessage"/></f:format.nl2br></p>
+    <p><f:format.nl2br><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.complimentaryClose"/></f:format.nl2br></p>
 
 
-    <p style="font-weight:bold;"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.yourMessageToUs"/></p>
+    <p style="font-weight:bold;"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.yourMessageToUs"/></p>
     <f:comment>
     <!--
         Form content, rendered as table (identical to original EXT:form Email template)
