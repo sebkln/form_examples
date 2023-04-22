@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" date="2018-09-08T12:46:21Z"
+		  original="EXT:form_examples/Resources/Private/Language/Form/locallang_general.xlf"
+		  product-name="form_examples">
+		<header/>
+		<body>
+			<!-- TRANSLATION FOR ALL FORMS
+
+				 Note: Every translation key can be overridden by prepending it with the form identifier:
+					   '<form-identifier>.element.<element-name>.properties.label' will override
+					   'element.<element-name>.properties.label'
+			-->
+
+
+			<!-- ### LABELS, FIELDSETS, HEADINGS
+				 Translation keys:
+				 - element.<element-name>.properties.label
+				 - element.<element-type>.properties.label
+			-->
+			<trans-unit id="element.title.properties.label" approved="yes">
+				<source>Title</source>
+				<target>Anrede</target>
+			</trans-unit>
+			<trans-unit id="element.firstname.properties.label" approved="yes">
+				<source>First name</source>
+				<target>Vorname</target>
+			</trans-unit>
+			<trans-unit id="element.lastname.properties.label" approved="yes">
+				<source>Last name</source>
+				<target>Nachname</target>
+			</trans-unit>
+			<trans-unit id="element.email.properties.label" approved="yes">
+				<source>Email address</source>
+				<target>E-Mail-Adresse</target>
+			</trans-unit>
+			<trans-unit id="element.message.properties.label" approved="yes">
+				<source>Message</source>
+				<target>Ihre Nachricht</target>
+			</trans-unit>
+			<trans-unit id="element.SummaryPage.properties.label" approved="yes">
+				<source>Summary</source>
+				<target>Übersicht</target>
+			</trans-unit>
+
+
+			<!-- ### OPTIONS
+				 Translation key: element.<element-name>.properties.options.<value>
+			-->
+			<trans-unit id="element.title.properties.prependOptionLabel" approved="yes">
+				<source>Please choose ...</source>
+				<target>Bitte wählen ...</target>
+			</trans-unit>
+			<trans-unit id="element.title.properties.options.male" approved="yes">
+				<source>Mr</source>
+				<target>Herr</target>
+			</trans-unit>
+			<trans-unit id="element.title.properties.options.female" approved="yes">
+				<source>Ms</source>
+				<target>Frau</target>
+			</trans-unit>
+
+
+			<!-- ### PLACEHOLDER ATTRIBUTES
+				 Translation keys:
+				 - element.<element-name>.properties.placeholder
+				 - element.<element-type>.properties.placeholder
+			-->
+			<trans-unit id="element.firstname.properties.placeholder" approved="yes">
+				<source>Your first name</source>
+				<target>Ihr Vorname</target>
+			</trans-unit>
+			<trans-unit id="element.lastname.properties.placeholder" approved="yes">
+				<source>Your last name</source>
+				<target>Ihr Nachname</target>
+			</trans-unit>
+			<trans-unit id="element.email.properties.placeholder" approved="yes">
+				<source>john@doe.com</source>
+				<target>michael@mustermann.de</target>
+			</trans-unit>
+
+
+			<!-- ### BUTTONS
+				 Translation keys:
+				 - element.Form.renderingOptions.submitButtonLabel
+				 - element.Page.renderingOptions.previousButtonLabel
+				 - element.Page.renderingOptions.nextButtonLabel
+				 - element.SummaryPage.renderingOptions.previousButtonLabel
+				 - element.SummaryPage.renderingOptions.nextButtonLabel
+			-->
+			<trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
+				<source>Send message</source>
+				<target>Nachricht senden</target>
+			</trans-unit>
+			<trans-unit id="element.Page.renderingOptions.previousButtonLabel" approved="yes">
+				<source>back</source>
+				<target>zurück</target>
+			</trans-unit>
+			<trans-unit id="element.Page.renderingOptions.nextButtonLabel" approved="yes">
+				<source>continue</source>
+				<target>weiter</target>
+			</trans-unit>
+			<trans-unit id="element.SummaryPage.renderingOptions.previousButtonLabel" approved="yes">
+				<source>back</source>
+				<target>zurück</target>
+			</trans-unit>
+			<trans-unit id="element.SummaryPage.renderingOptions.nextButtonLabel" approved="yes">
+				<source>continue</source>
+				<target>weiter</target>
+			</trans-unit>
+
+
+			<!-- ### FINISHERS
+				 Translation key: finisher.<finisher-identifier>.<option-name>
+			-->
+			<trans-unit id="finisher.EmailToSender.subject" approved="yes">
+				<source>Your message to ACME Inc.</source>
+				<target>Ihre Nachricht an die ACME Inc.</target>
+			</trans-unit>
+			<trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
+				<source>Message from website</source>
+				<target>Nachricht von Website</target>
+			</trans-unit>
+			<trans-unit id="finisher.Confirmation.message" approved="yes">
+				<source>Thank you for your message! We will get back to you as soon as possible.</source>
+				<target>Vielen Dank für Ihre Nachricht! Wir werden uns schnellstmöglich bei Ihnen melden.</target>
+			</trans-unit>
+
+
+			<!-- ### VALIDATION ERROR MESSAGES
+				 ATTENTION: These will not work if you already set a custom message in your form definition!
+
+				 Translation key: validation.error.<error-code>
+			-->
+			<trans-unit id="validation.error.1221559976" approved="yes">
+				<source>Please enter valid email address. Thanks!</source>
+				<target>Bitte gebe eine gültige E-Mail-Adresse ein. Danke!</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

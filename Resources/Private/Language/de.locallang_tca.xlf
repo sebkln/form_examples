@@ -1,101 +1,102 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2017-06-28T20:13:38Z"
-          product-name="form_examples">
-        <header/>
-        <body>
-            <trans-unit id="tx_formexamples_domain_model_data" approved="yes">
-                <source>Submitted form data</source>
-                <target>Übermittelte Formulardaten</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.palette.formtitle" approved="yes">
-                <source>Form</source>
-                <target>Formular</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.palette.person" approved="yes">
-                <source>Person</source>
-                <target>Person</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.palette.address" approved="yes">
-                <source>Address data</source>
-                <target>Adressdaten</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.palette.contactinfo" approved="yes">
-                <source>Contact information</source>
-                <target>Kontaktdaten</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.palette.communication" approved="yes">
-                <source>Message</source>
-                <target>Nachricht</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.palette.file" approved="yes">
-                <source>File attachments</source>
-                <target>Dateianhänge</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.formtitle" approved="yes">
-                <source>Title of the used form</source>
-                <target>Name des verwendeten Formulars</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.firstname" approved="yes">
-                <source>First name</source>
-                <target>Vorname</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.lastname" approved="yes">
-                <source>Last name</source>
-                <target>Nachname</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.title" approved="yes">
-                <source>Title</source>
-                <target>Anrede</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.company" approved="yes">
-                <source>Company</source>
-                <target>Firma</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.email" approved="yes">
-                <source>Email address</source>
-                <target>E-Mail-Adresse</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.address" approved="yes">
-                <source>Address</source>
-                <target>Anschrift</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.zip" approved="yes">
-                <source>Zip code</source>
-                <target>Postleitzahl</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.city" approved="yes">
-                <source>City</source>
-                <target>Stadt</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.country" approved="yes">
-                <source>Country</source>
-                <target>Land</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.www" approved="yes">
-                <source>Website</source>
-                <target>Webseite</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.telephone" approved="yes">
-                <source>Telephone number</source>
-                <target>Telefonnummer</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.fax" approved="yes">
-                <source>Fax number</source>
-                <target>Faxnummer</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.subject" approved="yes">
-                <source>Subject</source>
-                <target>Betreff</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.message" approved="yes">
-                <source>Message</source>
-                <target>Nachricht</target>
-            </trans-unit>
-            <trans-unit id="tx_formexamples_domain_model_data.media" approved="yes">
-                <source>Media</source>
-                <target>Medien</target>
-            </trans-unit>
-        </body>
-    </file>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" date="2017-06-28T20:13:38Z"
+		  original="EXT:form_examples/Resources/Private/Language/locallang_tca.xlf"
+		  product-name="form_examples">
+		<header/>
+		<body>
+			<trans-unit id="tx_formexamples_domain_model_data" approved="yes">
+				<source>Submitted form data</source>
+				<target>Übermittelte Formulardaten</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.palette.formtitle" approved="yes">
+				<source>Form</source>
+				<target>Formular</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.palette.person" approved="yes">
+				<source>Person</source>
+				<target>Person</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.palette.address" approved="yes">
+				<source>Address data</source>
+				<target>Adressdaten</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.palette.contactinfo" approved="yes">
+				<source>Contact information</source>
+				<target>Kontaktdaten</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.palette.communication" approved="yes">
+				<source>Message</source>
+				<target>Nachricht</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.palette.file" approved="yes">
+				<source>File attachments</source>
+				<target>Dateianhänge</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.formtitle" approved="yes">
+				<source>Title of the used form</source>
+				<target>Name des verwendeten Formulars</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.firstname" approved="yes">
+				<source>First name</source>
+				<target>Vorname</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.lastname" approved="yes">
+				<source>Last name</source>
+				<target>Nachname</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.title" approved="yes">
+				<source>Title</source>
+				<target>Anrede</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.company" approved="yes">
+				<source>Company</source>
+				<target>Firma</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.email" approved="yes">
+				<source>Email address</source>
+				<target>E-Mail-Adresse</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.address" approved="yes">
+				<source>Address</source>
+				<target>Anschrift</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.zip" approved="yes">
+				<source>Zip code</source>
+				<target>Postleitzahl</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.city" approved="yes">
+				<source>City</source>
+				<target>Stadt</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.country" approved="yes">
+				<source>Country</source>
+				<target>Land</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.www" approved="yes">
+				<source>Website</source>
+				<target>Webseite</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.telephone" approved="yes">
+				<source>Telephone number</source>
+				<target>Telefonnummer</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.fax" approved="yes">
+				<source>Fax number</source>
+				<target>Faxnummer</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.subject" approved="yes">
+				<source>Subject</source>
+				<target>Betreff</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.message" approved="yes">
+				<source>Message</source>
+				<target>Nachricht</target>
+			</trans-unit>
+			<trans-unit id="tx_formexamples_domain_model_data.media" approved="yes">
+				<source>Media</source>
+				<target>Medien</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

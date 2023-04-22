@@ -16,9 +16,9 @@ prototypes:
           translation:
             translationFiles:
               # index '10' is reserved for the default translation file.
-              20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
-              30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
-              40: 'EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf'
+              20: 'EXT:form_examples/Resources/Private/Language/Form/locallang_general.xlf'
+              30: 'EXT:form_examples/Resources/Private/Language/Form/locallang_specific.xlf'
+              40: 'EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf'
           templateRootPaths:
             90: 'EXT:form_examples/Resources/Private/Forms/AllForms/Frontend/Templates/'
         formEditor:

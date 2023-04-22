@@ -1,23 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-    <file source-language="en" datatype="plaintext" product-name="form_examples">
-        <header/>
-        <body>
-            <!-- ### FORM EDITOR LABELS (TYPO3 backend)
-                 Translation keys: as set in your custom form setup
-            -->
-            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.label">
-                <source>Form styling</source>
-            </trans-unit>
-            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.default.label">
-                <source>Contact form</source>
-            </trans-unit>
-            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.survey.label">
-                <source>Survey</source>
-            </trans-unit>
-            <trans-unit id="formEditor.elements.Form.editor.formStyleClass.subscription.label">
-                <source>Newsletter subscription</source>
-            </trans-unit>
-        </body>
-    </file>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" date="2021-02-20T11:57:00Z"
+		  original="EXT:form_examples/Resources/Private/Language/Database.xlf"
+		  product-name="form_examples">
+		<header/>
+		<body>
+			<!-- ### FORM EDITOR LABELS (TYPO3 backend)
+				 Translation keys: as set in your custom form setup
+			-->
+			<trans-unit id="formEditor.elements.Form.editor.formStyleClass.label">
+				<source>Form styling</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.editor.formStyleClass.default.label">
+				<source>Contact form</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.editor.formStyleClass.survey.label">
+				<source>Survey</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.editor.formStyleClass.subscription.label">
+				<source>Newsletter subscription</source>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

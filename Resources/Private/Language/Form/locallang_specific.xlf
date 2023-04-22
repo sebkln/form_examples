@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" date="2018-09-08T12:46:21Z"
+		  original="EXT:form_examples/Resources/Private/Language/Form/locallang_specific.xlf"
+		  product-name="form_examples">
+		<header/>
+		<body>
+			<!-- TRANSLATION FOR SPECIFIC FORMS -->
+
+
+			<!-- ### LABELS, FIELDSETS, HEADINGS
+				 Translation key: <form-identifier>.element.<element-name>.properties.label
+			-->
+			<trans-unit id="BasicContactFormExample.element.page-1.properties.label">
+				<source>Basic contact form</source>
+			</trans-unit>
+			<trans-unit id="BasicContactFormExample.element.name.properties.label">
+				<source>Name and surname</source>
+			</trans-unit>
+			<trans-unit id="BasicContactFormExample.element.subject.properties.label">
+				<source>Subject</source>
+			</trans-unit>
+			<trans-unit id="BasicContactFormExample.element.message.properties.label">
+				<source>Your message</source>
+			</trans-unit>
+
+
+			<!-- ### PLACEHOLDER ATTRIBUTES
+				 Translation key: <form-identifier>.element.<element-name>.properties.placeholder
+			-->
+			<trans-unit id="BasicContactFormExample.element.name.properties.placeholder">
+				<source>John Doe</source>
+			</trans-unit>
+			<trans-unit id="BasicContactFormExample.element.subject.properties.placeholder">
+				<source>Your concern</source>
+			</trans-unit>
+			<trans-unit id="BasicContactFormExample.element.message.properties.placeholder">
+				<source>How can we be of help?</source>
+			</trans-unit>
+
+
+			<!-- ### BUTTONS
+				 Translation keys:
+				 Please mind the different position of the form-identifier for submitButtonLabel:
+				 - element.<form-identifier>.renderingOptions.submitButtonLabel
+
+				 - <form-identifier>.element.<element-identifier>.renderingOptions.nextButtonLabel
+				 - element.<element-identifier>.renderingOptions.nextButtonLabel
+				 - <form-identifier>.element.<element-identifier>.renderingOptions.previousButtonLabel
+				 - element.<element-identifier>.renderingOptions.previousButtonLabel
+			-->
+			<trans-unit id="element.BasicContactFormExample.renderingOptions.submitButtonLabel">
+				<source>Send message!</source>
+			</trans-unit>
+			<trans-unit id="BasicContactFormExample.element.page-1.renderingOptions.nextButtonLabel">
+				<source>load summary</source>
+			</trans-unit>
+			<trans-unit id="element.summarypage.renderingOptions.previousButtonLabel">
+				<source>update</source>
+			</trans-unit>
+
+
+			<!-- ### FINISHERS
+				 Translation key: <form-identifier>.finisher.<finisher-identifier>.<option-name>
+			-->
+			<trans-unit id="ExtendedContactFormExample.finisher.Confirmation.message">
+				<source>Next time, we'll want to know some more about you!</source>
+			</trans-unit>
+
+
+			<!-- ### VALIDATION ERROR MESSAGES
+				 ATTENTION: These will not work if you already set a custom message in your form definition!
+
+				 Translation key: <form-identifier>.validation.error.<error-code>
+			-->
+			<trans-unit id="BasicContactFormExample.validation.error.1221559976">
+				<source>Please enter valid email address. Thank you very much!</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" date="2018-09-08T12:46:21Z"
+		  original="EXT:form_examples/Resources/Private/Language/Form/locallang_general.xlf"
+		  product-name="form_examples">
+		<header/>
+		<body>
+			<!-- TRANSLATION FOR ALL FORMS
+
+				 Note: Every translation key can be overridden by prepending it with the form identifier:
+					   '<form-identifier>.element.<element-name>.properties.label' will override
+					   'element.<element-name>.properties.label'
+			-->
+
+
+			<!-- ### LABELS, FIELDSETS, HEADINGS
+				 Translation keys:
+				 - element.<element-name>.properties.label
+				 - element.<element-type>.properties.label
+			-->
+			<trans-unit id="element.title.properties.label">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="element.firstname.properties.label">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="element.lastname.properties.label">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="element.email.properties.label">
+				<source>Email address</source>
+			</trans-unit>
+			<trans-unit id="element.message.properties.label">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="element.SummaryPage.properties.label">
+				<source>Summary</source>
+			</trans-unit>
+
+
+			<!-- ### OPTIONS
+				 Translation key: element.<element-name>.properties.options.<value>
+			-->
+			<trans-unit id="element.title.properties.prependOptionLabel">
+				<source>Please choose ...</source>
+			</trans-unit>
+			<trans-unit id="element.title.properties.options.male">
+				<source>Mr</source>
+			</trans-unit>
+			<trans-unit id="element.title.properties.options.female">
+				<source>Ms</source>
+			</trans-unit>
+
+
+			<!-- ### PLACEHOLDER ATTRIBUTES
+				 Translation keys:
+				 - element.<element-name>.properties.placeholder
+				 - element.<element-type>.properties.placeholder
+			-->
+			<trans-unit id="element.firstname.properties.placeholder">
+				<source>Your first name</source>
+			</trans-unit>
+			<trans-unit id="element.lastname.properties.placeholder">
+				<source>Your last name</source>
+			</trans-unit>
+			<trans-unit id="element.email.properties.placeholder">
+				<source>john@doe.com</source>
+			</trans-unit>
+
+
+			<!-- ### BUTTONS
+				 Translation keys:
+				 - element.Form.renderingOptions.submitButtonLabel
+				 - element.Page.renderingOptions.previousButtonLabel
+				 - element.Page.renderingOptions.nextButtonLabel
+				 - element.SummaryPage.renderingOptions.previousButtonLabel
+				 - element.SummaryPage.renderingOptions.nextButtonLabel
+			-->
+			<trans-unit id="element.Form.renderingOptions.submitButtonLabel">
+				<source>Send message</source>
+			</trans-unit>
+			<trans-unit id="element.Page.renderingOptions.previousButtonLabel">
+				<source>back</source>
+			</trans-unit>
+			<trans-unit id="element.Page.renderingOptions.nextButtonLabel">
+				<source>continue</source>
+			</trans-unit>
+			<trans-unit id="element.SummaryPage.renderingOptions.previousButtonLabel">
+				<source>back</source>
+			</trans-unit>
+			<trans-unit id="element.SummaryPage.renderingOptions.nextButtonLabel">
+				<source>continue</source>
+			</trans-unit>
+
+
+			<!-- ### FINISHERS
+				 Translation key: finisher.<finisher-identifier>.<option-name>
+			-->
+			<trans-unit id="finisher.EmailToSender.subject">
+				<source>Your message to ACME Inc.</source>
+			</trans-unit>
+			<trans-unit id="finisher.EmailToReceiver.subject">
+				<source>Message from website</source>
+			</trans-unit>
+			<trans-unit id="finisher.Confirmation.message">
+				<source>Thank you for your message! We will get back to you as soon as possible.</source>
+			</trans-unit>
+
+
+			<!-- ### VALIDATION ERROR MESSAGES
+				 ATTENTION: These will not work if you already set a custom message in your form definition!
+
+				 Translation key: validation.error.<error-code>
+			-->
+			<trans-unit id="validation.error.1221559976">
+				<source>Please enter valid email address. Thanks!</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
