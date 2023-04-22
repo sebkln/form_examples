@@ -3,7 +3,7 @@ renderingOptions:
   submitButtonLabel: Submit
 type: Form
 identifier: UploadFormExample
-label: 'Upload form example'
+label: 'Example - Upload form'
 prototypeName: standard
 finishers:
   -
