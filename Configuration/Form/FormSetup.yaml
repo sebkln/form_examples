@@ -41,14 +41,6 @@ TYPO3:
                       30:
                         value: subscription
                         label: formEditor.elements.Form.editor.formStyleClass.subscription.label
-                  900:
-                    selectOptions:
-                      50:
-                        value: 'Confirmation'
-                        label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
-                      60:
-                        value: 'SaveToDatabase'
-                        label: 'formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label'
           finishersDefinition:
             EmailToReceiver:
               # These root paths will be used for email finishers in all form definitions:
@@ -72,14 +64,6 @@ TYPO3:
                 predefinedDefaults:
                   options:
                     useFluidEmail: true
-            Confirmation:
-              FormEngine:
-                label: 'formEditor.element.AdvancedPassword.editor.confirmationLabel.predefinedDefaults'
-                elements:
-                  message:
-                    label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
-                    config:
-                      type: 'input'
 
         ### PROTOTYPE: BASIC CONTACT FORM EXAMPLE
         basicContactFormExample:
