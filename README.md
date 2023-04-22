@@ -63,9 +63,9 @@ here: https://docs.typo3.org/c/typo3/cms-form/master/en-us/I/Concepts/FrontendRe
 
 In this example extension, I split the translations in several files:
 
-- *locallang_forms_general.xlf*  contains translations for all forms in general.
-- *locallang_forms_specific.xlf* contains values for single forms, which override the translations in the first file.
-- *locallang_forms_custom.xlf* contains translated values for individual purposes in forms, e.g. localized salutation in
+- *locallang_general.xlf*  contains translations for all forms in general.
+- *locallang_specific.xlf* contains values for single forms, which override the translations in the first file.
+- *locallang_custom.xlf* contains translated values for individual purposes in forms, e.g. localized salutation in
   the sent email.
 
 Please note that the fallback chain does **not** require to split translations in separate files! This is just a
@@ -86,9 +86,9 @@ TYPO3:
                 translation:
                   translationFiles:
                     # index '10' is reserved for the default translation file.
-                    20: 'EXT:form_examples/Resources/Private/Language/locallang_forms_general.xlf'
-                    30: 'EXT:form_examples/Resources/Private/Language/locallang_forms_specific.xlf'
-                    40: 'EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf'
+                    20: 'EXT:form_examples/Resources/Private/Language/Form/locallang_general.xlf'
+                    30: 'EXT:form_examples/Resources/Private/Language/Form/locallang_specific.xlf'
+                    40: 'EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf'
 ````
 
 ## Related tutorials

@@ -1,6 +1,6 @@
 <f:spaceless><f:render section="Title" optional="true" />
 <f:render section="Main" /></f:spaceless>
 
-<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.footer.note.customization"/>
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.customization"/>
 
-<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.footer.note.defaultLayout"/>
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.defaultLayout"/>

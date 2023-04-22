@@ -1,8 +1,8 @@
 <f:spaceless><f:render section="Title" optional="true" />
 <f:render section="Main" /></f:spaceless>
 
-<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.footer.note.customization"/>
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.customization"/>
 
-<f:format.nl2br><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.footer.note.customReceiverLayout"/></f:format.nl2br>
+<f:format.nl2br><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.customReceiverLayout"/></f:format.nl2br>
 
 Please contact your site administrator if you feel you received this email by accident.

@@ -1,7 +1,7 @@
 <f:layout name="CustomReceiverLayout" />
 <f:section name="Title">{title}</f:section>
 <f:section name="Main">
-<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/locallang_forms_custom.xlf:email.receiver.introduction"/>
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.receiver.introduction"/>
 
 <formvh:renderAllFormValues renderable="{form.formDefinition}" as="formValue"><f:spaceless>
     <f:if condition="{formValue.isMultiValue}">
