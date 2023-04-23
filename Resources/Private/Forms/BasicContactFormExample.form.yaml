@@ -5,7 +5,7 @@ renderingOptions:
 identifier: BasicContactFormExample
 label: 'Example - Basic contact form'
 type: Form
-prototypeName: standard
+prototypeName: standardExamples
 finishers:
   -
     options:
