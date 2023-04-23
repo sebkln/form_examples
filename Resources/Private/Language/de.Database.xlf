@@ -8,6 +8,26 @@
 			<!-- ### FORM EDITOR LABELS (TYPO3 backend)
 				 Translation keys: as set in your custom form setup
 			-->
+			<trans-unit id="formManager.selectablePrototypesConfiguration.standardExamples.label">
+				<source>Standard (EXT:form_examples)</source>
+				<target>Standard (EXT:form_examples)</target>
+			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.complaintForm.label">
+				<source>Complaint form (EXT:form_examples)</source>
+				<target>Beschwerdeformular (EXT:form_examples)</target>
+			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.standardExamples.newFormTemplates.BasicContactFormExample.label">
+				<source>Basic contact form</source>
+				<target>Einfaches Kontaktformular</target>
+			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.standardExamples.newFormTemplates.UploadFormExample.label">
+				<source>Upload form</source>
+				<target>Upload-Formular</target>
+			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.complaintForm.newFormTemplates.CustomPrototypeExample.label">
+				<source>Complaint form</source>
+				<target>Beschwerdeformular</target>
+			</trans-unit>
 			<trans-unit id="formEditor.elements.Form.editor.formStyleClass.label">
 				<source>Form styling</source>
 				<target>Formular-Design</target>
