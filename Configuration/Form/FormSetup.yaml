@@ -4,6 +4,32 @@ persistenceManager:
   allowSaveToExtensionPaths: true
   allowDeleteFromExtensionPaths: true
 
+### FORM MANAGER (TYPO3 BACKEND MODULE)
+### "Create new form" > "Predefined form"
+### The configuration adds two options to the "Form prototype" select field.
+### Each prototype provides existing forms as templates to build a new form.
+formManager:
+  translationFiles:
+    20: 'EXT:form_examples/Resources/Private/Language/Database.xlf'
+  selectablePrototypesConfiguration:
+    998:
+      identifier: standardExamples
+      label: formManager.selectablePrototypesConfiguration.standardExamples.label
+      newFormTemplates:
+        100:
+          templatePath: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample.form.yaml'
+          label: formManager.selectablePrototypesConfiguration.standardExamples.newFormTemplates.BasicContactFormExample.label
+        200:
+          templatePath: 'EXT:form_examples/Resources/Private/Forms/UploadFormExample.form.yaml'
+          label: formManager.selectablePrototypesConfiguration.standardExamples.newFormTemplates.UploadFormExample.label
+    999:
+      identifier: complaintForm
+      label: formManager.selectablePrototypesConfiguration.complaintForm.label
+      newFormTemplates:
+        100:
+          templatePath: 'EXT:form_examples/Resources/Private/Forms/CustomPrototypeExample.form.yaml'
+          label: formManager.selectablePrototypesConfiguration.complaintForm.newFormTemplates.CustomPrototypeExample.label
+
 prototypes:
   ### PROTOTYPE: STANDARD (FOR EXAMPLES)
   ### By using this custom prototype for (almost) all provided example forms,
