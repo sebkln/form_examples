@@ -1,10 +1,11 @@
 
 renderingOptions:
   submitButtonLabel: Submit
+  formStyleClass: ''
 identifier: BasicContactFormExample
 label: 'Example - Basic contact form'
 type: Form
-prototypeName: basicContactFormExample
+prototypeName: standard
 finishers:
   -
     options:

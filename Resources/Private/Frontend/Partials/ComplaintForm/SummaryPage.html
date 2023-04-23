@@ -1,0 +1,20 @@
+<html xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<formvh:renderRenderable renderable="{page}">
+    <fieldset class="form-group">
+        <h3>{page.rootForm.elements.name.label}</h3>
+        <formvh:renderFormValue renderable="{page.rootForm.elements.name}" as="formValue">
+            <p><code>{formValue.processedValue}</code></p>
+        </formvh:renderFormValue>
+
+        <h3>{page.rootForm.elements.email.label}</h3>
+        <formvh:renderFormValue renderable="{page.rootForm.elements.email}" as="formValue">
+            <p><code>{formValue.processedValue}</code></p>
+        </formvh:renderFormValue>
+
+        <h3>{page.rootForm.elements.issue.label}</h3>
+        <formvh:renderFormValue renderable="{page.rootForm.elements.issue}" as="formValue">
+            <p><code>{formValue.processedValue}</code></p>
+        </formvh:renderFormValue>
+    </fieldset>
+</formvh:renderRenderable>
+</html>
