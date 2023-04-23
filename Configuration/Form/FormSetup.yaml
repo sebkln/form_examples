@@ -23,9 +23,14 @@ TYPO3:
                     30: 'EXT:form_examples/Resources/Private/Language/Form/locallang_specific.xlf'
                     40: 'EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf'
                 templateRootPaths:
-                  90: 'EXT:form_examples/Resources/Private/Forms/AllForms/Frontend/Templates/'
+                  90: 'EXT:form_examples/Resources/Private/Frontend/Templates/Standard/'
+                partialRootPaths:
+                  90: 'EXT:form_examples/Resources/Private/Frontend/Partials/Standard/'
+                layoutRootPaths:
+                  90: 'EXT:form_examples/Resources/Private/Frontend/Layouts/Standard/'
               formEditor:
                 editors:
+                  # Add 'form styling' select field in form editor:
                   500:
                     identifier: formStyleClass
                     templateName: Inspector-SingleSelectEditor
@@ -46,9 +51,9 @@ TYPO3:
               # These root paths will be used for email finishers in all form definitions:
               options:
                 templateRootPaths:
-                  20: 'EXT:form_examples/Resources/Private/Templates/Email/'
+                  20: 'EXT:form_examples/Resources/Private/Frontend/Templates/Standard/Finishers/Email/'
                 layoutRootPaths:
-                  20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
+                  20: 'EXT:form_examples/Resources/Private/Frontend/Layouts/Standard/Finishers/Email/'
               # Enable FluidEmail for all newly added email finishers:
               formEditor:
                 predefinedDefaults:
@@ -57,24 +62,27 @@ TYPO3:
             EmailToSender:
               options:
                 templateRootPaths:
-                  20: 'EXT:form_examples/Resources/Private/Templates/Email/'
+                  20: 'EXT:form_examples/Resources/Private/Frontend/Templates/Standard/Finishers/Email/'
                 layoutRootPaths:
-                  20: 'EXT:form_examples/Resources/Private/Layouts/Email/'
+                  20: 'EXT:form_examples/Resources/Private/Frontend/Layouts/Standard/Finishers/Email/'
               formEditor:
                 predefinedDefaults:
                   options:
                     useFluidEmail: true
 
-        ### PROTOTYPE: BASIC CONTACT FORM EXAMPLE
-        basicContactFormExample:
+        ### PROTOTYPE: COMPLAINT FORM
+        complaintForm:
           __inheritances:
             10: 'TYPO3.CMS.Form.prototypes.standard'
           formElementsDefinition:
             Form:
               renderingOptions:
                 templateRootPaths:
-                  100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Templates/'
+                  100: 'EXT:form_examples/Resources/Private/Frontend/Templates/ComplaintForm/'
                 partialRootPaths:
-                  100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Partials/'
+                  100: 'EXT:form_examples/Resources/Private/Frontend/Partials/ComplaintForm/'
                 layoutRootPaths:
-                  100: 'EXT:form_examples/Resources/Private/Forms/BasicContactFormExample/Frontend/Layouts/'
+                  100: 'EXT:form_examples/Resources/Private/Frontend/Layouts/ComplaintForm/'
+            SingleSelect:
+              properties:
+                elementClassAttribute: 'custom-select'

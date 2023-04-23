@@ -43,6 +43,12 @@ for your project here: https://github.com/sebkln/form_distribution
 - Personalized salutation in email, depending on the selected title in the form.
 - For all newly added email finishers, FluidEmail ist enabled by default.
 
+### Custom prototype (complaint form)
+
+- Uses the custom prototype `complaintForm` to set different template paths
+  and a different class for the `SingleSelect` field.
+- The `SummaryPage` partial shows how to render individual form field labels and values.
+
 ## Translating forms
 
 This extension provides some localization files to demonstrates how translating forms (labels, placeholders,
