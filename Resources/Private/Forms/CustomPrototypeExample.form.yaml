@@ -1,0 +1,65 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+identifier: CustomPrototypeExample
+label: 'Example - Custom prototype (complaint form)'
+type: Form
+prototypeName: complaintForm
+finishers:
+  -
+    options:
+      message: 'Your opinion is very important to us! 🥸'
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    identifier: page-1
+    label: Complaint
+    type: Page
+    renderables:
+      -
+        defaultValue: ''
+        identifier: name
+        label: Name
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: email
+        label: Email
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        properties:
+          options:
+            'This form is ridiculous': 'This form is ridiculous'
+          prependOptionLabel: 'Please select …'
+          fluidAdditionalAttributes:
+            required: required
+        type: SingleSelect
+        identifier: issue
+        label: Issue
+        validators:
+          -
+            identifier: NotEmpty
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    identifier: summarypage
+    label: 'Summary page'
+    type: SummaryPage
