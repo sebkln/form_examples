@@ -8,8 +8,15 @@ TYPO3:
         allowDeleteFromExtensionPaths: true
 
       prototypes:
-        ### PROTOTYPE: STANDARD
-        standard:
+        ### PROTOTYPE: STANDARD (FOR EXAMPLES)
+        ### By using this custom prototype for (almost) all provided example forms,
+        ### the "form_examples" extension prevents the following configuration
+        ### from affecting other forms in your TYPO3 installation.
+        ###
+        ### This does NOT necessarily mean that you MUST use custom prototypes in your TYPO3 project!
+        standardExamples:
+          __inheritances:
+            10: 'TYPO3.CMS.Form.prototypes.standard'
           formEditor:
             translationFiles:
               20: 'EXT:form_examples/Resources/Private/Language/Database.xlf'

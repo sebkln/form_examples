@@ -4,7 +4,7 @@ renderingOptions:
 identifier: CustomFluidEmail
 label: 'Example - Custom FluidEmail templates'
 type: Form
-prototypeName: standard
+prototypeName: standardExamples
 finishers:
   -
     options:

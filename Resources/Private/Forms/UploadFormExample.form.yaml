@@ -4,7 +4,7 @@ renderingOptions:
 type: Form
 identifier: UploadFormExample
 label: 'Example - Upload form'
-prototypeName: standard
+prototypeName: standardExamples
 finishers:
   -
     options:
