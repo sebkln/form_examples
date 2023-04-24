@@ -52,7 +52,7 @@ renderables:
       nextButtonLabel: 'Next step'
     type: Page
     identifier: page-1
-    label: Page
+    label: "Why don't you upload something?"
     renderables:
       -
         properties:
