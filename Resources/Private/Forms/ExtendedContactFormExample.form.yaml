@@ -43,7 +43,7 @@ finishers:
             mapOnDatabaseColumn: lastname
           company:
             mapOnDatabaseColumn: company
-          address:
+          streetAddress:
             mapOnDatabaseColumn: address
           zip:
             mapOnDatabaseColumn: zip
@@ -101,10 +101,10 @@ renderables:
             properties:
               options:
                 'Send me your brochure': 'Send me your brochure'
-                'I have questions about your product': 'I have questions about your product'
+                'I have questions about one of your products': 'I have questions about one of your products'
                 'Please call me back': 'Please call me back'
                 'Other (please write below)': 'Other (please write below)'
-              prependOptionLabel: 'Please select your subject'
+              prependOptionLabel: 'Please select your request'
               fluidAdditionalAttributes:
                 required: required
             type: SingleSelect
@@ -130,7 +130,7 @@ renderables:
       nextButtonLabel: 'Next step'
     type: Page
     identifier: page-2
-    label: 'Please tell us about yourself'
+    label: 'We would like to get to know you'
     renderables:
       -
         properties:
@@ -147,8 +147,9 @@ renderables:
             properties:
               options:
                 Mr: Mr
-                Mrs: Mrs
                 Ms: Ms
+                'Neutral salutation': 'Neutral salutation'
+              prependOptionLabel: 'Please choose ...'
               fluidAdditionalAttributes:
                 required: required
             type: SingleSelect
@@ -192,8 +193,8 @@ renderables:
           -
             defaultValue: ''
             type: Text
-            identifier: address
-            label: Address
+            identifier: streetAddress
+            label: 'Street address'
           -
             defaultValue: ''
             type: Text
@@ -209,42 +210,42 @@ renderables:
             type: Text
             identifier: country
             label: Country
-          -
-            type: Fieldset
-            identifier: fieldset-contact
-            label: 'Contact information'
-            renderables:
-              -
-                defaultValue: ''
-                type: Text
-                identifier: email
-                label: 'Email address'
-                properties:
-                  fluidAdditionalAttributes:
-                    required: required
-                validators:
-                  -
-                    identifier: EmailAddress
-                  -
-                    identifier: NotEmpty
-              -
-                defaultValue: ''
-                type: Text
-                identifier: telephone
-                label: Telephone
-              -
-                defaultValue: ''
-                type: Text
-                identifier: fax
-                label: Fax
-              -
-                defaultValue: ''
-                type: Text
-                identifier: www
-                label: Website
       -
         type: Fieldset
-        identifier: fieldset-1
+        identifier: fieldset-contact
+        label: 'Contact information'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: email
+            label: 'Email address'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: EmailAddress
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: telephone
+            label: Telephone
+          -
+            defaultValue: ''
+            type: Text
+            identifier: fax
+            label: Fax
+          -
+            defaultValue: ''
+            type: Text
+            identifier: www
+            label: Website
+      -
+        type: Fieldset
+        identifier: fieldset-other
         label: Other
         renderables:
           -

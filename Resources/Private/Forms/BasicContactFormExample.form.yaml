@@ -59,7 +59,7 @@ renderables:
         type: Text
         properties:
           fluidAdditionalAttributes:
-            placeholder: Name
+            required: required
         validators:
           -
             identifier: NotEmpty
@@ -70,7 +70,7 @@ renderables:
         type: Text
         properties:
           fluidAdditionalAttributes:
-            placeholder: Subject
+            required: required
         validators:
           -
             identifier: NotEmpty
@@ -81,7 +81,8 @@ renderables:
         type: Text
         properties:
           fluidAdditionalAttributes:
-            placeholder: 'Email address'
+            required: required
+            placeholder: john@doe.com
         validators:
           -
             identifier: NotEmpty

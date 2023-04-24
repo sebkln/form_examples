@@ -6,15 +6,20 @@
 		<header/>
 		<body>
 			<!-- ### CUSTOM VALUES IN FORMS
-				 Translation keys: all up to you
+				 Translation keys: are freely selectable
+				 Note: This also means that the fallback chain of the Form Framework is not available.
 			-->
-			<trans-unit id="email.salutation.male" approved="yes">
+			<trans-unit id="email.salutation.mr" approved="yes">
 				<source>Dear Mr %s,</source>
 				<target>Sehr geehrter Herr %s,</target>
 			</trans-unit>
-			<trans-unit id="email.salutation.female" approved="yes">
+			<trans-unit id="email.salutation.ms" approved="yes">
 				<source>Dear Ms %s,</source>
 				<target>Sehr geehrte Frau %s,</target>
+			</trans-unit>
+			<trans-unit id="email.salutation.neutral" approved="yes">
+				<source>Dear %1s %2s,</source>
+				<target>Guten Tag %1s %2s,</target>
 			</trans-unit>
 			<trans-unit id="email.thankyouMessage" xml:space="preserve" approved="yes">
 				<source>thank you for your message. We will contact you as soon as possible.
