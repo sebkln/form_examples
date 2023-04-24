@@ -9,9 +9,9 @@
 </f:comment>
 
 <f:switch expression="{form.formState.formValues.title}">
-    <f:case value="male"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.male" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
-    <f:case value="female"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.female" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
-    <f:defaultCase>Dear Sir or Madam,</f:defaultCase>
+    <f:case value="Mr"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.mr" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
+    <f:case value="Ms"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.ms" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
+    <f:defaultCase><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.neutral" arguments="{0: '{form.formState.formValues.firstname}', 1: '{form.formState.formValues.lastname}'}"/></f:defaultCase>
 </f:switch>
 
 <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.thankyouMessage"/>

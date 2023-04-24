@@ -8,7 +8,6 @@ prototypeName: standardExamples
 finishers:
   -
     options:
-      # Special email template, used only for the receiver:
       templateName: CustomReceiverTemplate
       useFluidEmail: true
       subject: 'E-Mail from website'
@@ -21,10 +20,7 @@ finishers:
     identifier: EmailToReceiver
   -
     options:
-      # Using a Fluid email template. As no "templateName" option is set, the default name is used.
       useFluidEmail: true
-      # Nonetheless, a customized template will be sent, as we copied the "Default" templates from EXT:form
-      # to this extension and registered the template path in "CustomFormSetup.yaml".
       subject: 'Your message to ACME'
       senderAddress: noreply@example.com
       senderName: 'ACME Inc.'
@@ -45,8 +41,9 @@ renderables:
       -
         properties:
           options:
-            male: Mr
-            female: Ms
+            Mr: Mr
+            Ms: Ms
+            'Neutral salutation': 'Neutral salutation'
           prependOptionLabel: 'Please choose ...'
           fluidAdditionalAttributes:
             required: required
@@ -56,6 +53,11 @@ renderables:
         validators:
           -
             identifier: NotEmpty
+        variants:
+          - identifier: hide-in-emails
+            renderingOptions:
+              enabled: false
+            condition: 'finisherIdentifier in ["EmailToSender"]'
       -
         defaultValue: ''
         identifier: firstname
@@ -63,7 +65,6 @@ renderables:
         type: Text
         properties:
           fluidAdditionalAttributes:
-            placeholder: 'First name'
             required: required
         validators:
           -
@@ -76,7 +77,6 @@ renderables:
         properties:
           fluidAdditionalAttributes:
             required: required
-            placeholder: 'Last name'
         validators:
           -
             identifier: NotEmpty
@@ -87,7 +87,6 @@ renderables:
         type: Text
         properties:
           fluidAdditionalAttributes:
-            placeholder: 'Email address'
             required: required
         validators:
           -
