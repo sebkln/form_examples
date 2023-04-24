@@ -7,15 +7,14 @@
 		<body>
 			<!-- TRANSLATION FOR ALL FORMS
 
-				 Note: Every translation key can be overridden by prepending it with the form identifier:
-					   '<form-identifier>.element.<element-name>.properties.label' will override
-					   'element.<element-name>.properties.label'
+				 Labels are grouped by property or type (label, placeholder, button, …).
 			-->
 
 
 			<!-- ### LABELS, FIELDSETS, HEADINGS
 				 Translation keys:
-				 - element.<element-name>.properties.label
+				 - <form-identifier>.element.<element-identifier>.properties.label
+				 - element.<element-identifier>.properties.label
 				 - element.<element-type>.properties.label
 			-->
 			<trans-unit id="element.title.properties.label">
@@ -30,8 +29,38 @@
 			<trans-unit id="element.email.properties.label">
 				<source>Email address</source>
 			</trans-unit>
+			<trans-unit id="element.telephone.properties.label">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="element.fax.properties.label">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="element.www.properties.label">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="element.company.properties.label">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="element.streetAddress.properties.label">
+				<source>Street address</source>
+			</trans-unit>
+			<trans-unit id="element.zip.properties.label">
+				<source>ZIP</source>
+			</trans-unit>
+			<trans-unit id="element.city.properties.label">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="element.country.properties.label">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="element.subject.properties.label">
+				<source>Subject</source>
+			</trans-unit>
 			<trans-unit id="element.message.properties.label">
 				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="element.fileupload.properties.label">
+				<source>File upload</source>
 			</trans-unit>
 			<trans-unit id="element.SummaryPage.properties.label">
 				<source>Summary</source>
@@ -39,42 +68,53 @@
 
 
 			<!-- ### OPTIONS
-				 Translation key: element.<element-name>.properties.options.<value>
+				 Translation keys:
+				 - <form-identifier>.element.<element-identifier>.properties.prependOptionLabel
+				 - element.<element-identifier>.properties.prependOptionLabel
+				 - <form-identifier>.element.<element-identifier>.properties.options.<value>
+				 - element.<element-identifier>.properties.options.<value>
 			-->
-			<trans-unit id="element.title.properties.prependOptionLabel">
+			<trans-unit id="element.SingleSelect.properties.prependOptionLabel">
 				<source>Please choose ...</source>
 			</trans-unit>
-			<trans-unit id="element.title.properties.options.male">
+			<trans-unit id="element.title.properties.options.Mr">
 				<source>Mr</source>
 			</trans-unit>
-			<trans-unit id="element.title.properties.options.female">
+			<trans-unit id="element.title.properties.options.Ms">
 				<source>Ms</source>
+			</trans-unit>
+			<trans-unit id="element.title.properties.options.Neutral salutation">
+				<source>Neutral salutation</source>
 			</trans-unit>
 
 
 			<!-- ### PLACEHOLDER ATTRIBUTES
 				 Translation keys:
-				 - element.<element-name>.properties.placeholder
+				 - <form-identifier>.element.<element-identifier>.properties.placeholder
+				 - element.<element-identifier>.properties.placeholder
 				 - element.<element-type>.properties.placeholder
 			-->
-			<trans-unit id="element.firstname.properties.placeholder">
-				<source>Your first name</source>
-			</trans-unit>
-			<trans-unit id="element.lastname.properties.placeholder">
-				<source>Your last name</source>
-			</trans-unit>
 			<trans-unit id="element.email.properties.placeholder">
 				<source>john@doe.com</source>
 			</trans-unit>
 
 
 			<!-- ### BUTTONS
-				 Translation keys:
+				 Please mind the different position of the form-identifier for submitButtonLabel:
+				 - element.<form-identifier>.renderingOptions.submitButtonLabel
+
+				 Translation keys (general):
 				 - element.Form.renderingOptions.submitButtonLabel
 				 - element.Page.renderingOptions.previousButtonLabel
 				 - element.Page.renderingOptions.nextButtonLabel
 				 - element.SummaryPage.renderingOptions.previousButtonLabel
 				 - element.SummaryPage.renderingOptions.nextButtonLabel
+
+				 Translation keys (specific):
+				 - <form-identifier>.element.<element-identifier>.renderingOptions.nextButtonLabel
+				 - element.<element-identifier>.renderingOptions.nextButtonLabel
+				 - <form-identifier>.element.<element-identifier>.renderingOptions.previousButtonLabel
+				 - element.<element-identifier>.renderingOptions.previousButtonLabel
 			-->
 			<trans-unit id="element.Form.renderingOptions.submitButtonLabel">
 				<source>Send message</source>
@@ -94,7 +134,9 @@
 
 
 			<!-- ### FINISHERS
-				 Translation key: finisher.<finisher-identifier>.<option-name>
+				 Translation keys:
+				 - <form-identifier>.finisher.<finisher-identifier>.<option-name>
+				 - finisher.<finisher-identifier>.<option-name>
 			-->
 			<trans-unit id="finisher.EmailToSender.subject">
 				<source>Your message to ACME Inc.</source>
@@ -110,7 +152,11 @@
 			<!-- ### VALIDATION ERROR MESSAGES
 				 ATTENTION: These will not work if you already set a custom message in your form definition!
 
-				 Translation key: validation.error.<error-code>
+				 Translation keys:
+				 - <form-identifier>.validation.error.<element-identifier>.<error-code>
+				 - <form-identifier>.validation.error.<error-code>
+				 - validation.error.<element-identifier>.<error-code>
+				 - validation.error.<error-code>
 			-->
 			<trans-unit id="validation.error.1221559976">
 				<source>Please enter valid email address. Thanks!</source>

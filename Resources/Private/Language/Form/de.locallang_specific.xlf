@@ -5,12 +5,13 @@
 		  product-name="form_examples">
 		<header/>
 		<body>
-			<!-- TRANSLATION FOR SPECIFIC FORMS -->
+			<!-- TRANSLATION FOR SPECIFIC FORMS
 
-
-			<!-- ### LABELS, FIELDSETS, HEADINGS
-				 Translation key: <form-identifier>.element.<element-name>.properties.label
+				 Labels are grouped by form identifier.
 			-->
+
+
+			<!-- ### FORM: BasicContactFormExample -->
 			<trans-unit id="BasicContactFormExample.element.page-1.properties.label">
 				<source>Basic contact form</source>
 				<target>Einfaches Kontaktformular</target>
@@ -19,43 +20,14 @@
 				<source>Name and surname</source>
 				<target>Vor- und Nachname</target>
 			</trans-unit>
-			<trans-unit id="BasicContactFormExample.element.subject.properties.label">
-				<source>Subject</source>
-				<target>Betreff</target>
-			</trans-unit>
 			<trans-unit id="BasicContactFormExample.element.message.properties.label">
 				<source>Your message</source>
 				<target>Ihre Nachricht</target>
-			</trans-unit>
-
-
-			<!-- ### PLACEHOLDER ATTRIBUTES
-				 Translation key: <form-identifier>.element.<element-name>.properties.placeholder
-			-->
-			<trans-unit id="BasicContactFormExample.element.name.properties.placeholder">
-				<source>John Doe</source>
-				<target>Michael Mustermann</target>
-			</trans-unit>
-			<trans-unit id="BasicContactFormExample.element.subject.properties.placeholder">
-				<source>Your concern</source>
-				<target>Ihr Anliegen</target>
 			</trans-unit>
 			<trans-unit id="BasicContactFormExample.element.message.properties.placeholder">
 				<source>How can we be of help?</source>
 				<target>Wie können wir Ihnen behilflich sein?</target>
 			</trans-unit>
-
-
-			<!-- ### BUTTONS
-				 Translation keys:
-				 Please mind the different position of the form-identifier for submitButtonLabel:
-				 - element.<form-identifier>.renderingOptions.submitButtonLabel
-
-				 - <form-identifier>.element.<element-identifier>.renderingOptions.nextButtonLabel
-				 - element.<element-identifier>.renderingOptions.nextButtonLabel
-				 - <form-identifier>.element.<element-identifier>.renderingOptions.previousButtonLabel
-				 - element.<element-identifier>.renderingOptions.previousButtonLabel
-			-->
 			<trans-unit id="element.BasicContactFormExample.renderingOptions.submitButtonLabel">
 				<source>Send message!</source>
 				<target>Nachricht senden!</target>
@@ -64,29 +36,83 @@
 				<source>load summary</source>
 				<target>zur Übersicht</target>
 			</trans-unit>
-			<trans-unit id="element.summarypage.renderingOptions.previousButtonLabel">
+			<trans-unit id="BasicContactFormExample.validation.error.1221559976">
+				<source>Please enter valid email address. Thank you very much!</source>
+				<target>Bitte gebe eine gültige E-Mail-Adresse ein. Vielen herzlichen Dank!</target>
+			</trans-unit>
+			<trans-unit id="BasicContactFormExample.element.summarypage.renderingOptions.previousButtonLabel">
 				<source>update</source>
 				<target>verbessern</target>
 			</trans-unit>
 
 
-			<!-- ### FINISHERS
-				 Translation key: <form-identifier>.finisher.<finisher-identifier>.<option-name>
-			-->
+			<!-- ### FORM: ExtendedContactFormExample -->
+			<trans-unit id="ExtendedContactFormExample.element.page-1.properties.label">
+				<source>How can we help you?</source>
+				<target>Wie können wir Ihnen helfen?</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.page-2.properties.label">
+				<source>We would like to get to know you.</source>
+				<target>Wir möchten Sie kennenlernen.</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.trust-us.properties.label">
+				<source>Trust us!</source>
+				<target>Vertrauen Sie uns!</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.trust-us.properties.text">
+				<source>We only need this little personal data.</source>
+				<target>Wir brauchen doch nur so wenige persönliche Daten.</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.fieldset-communication.properties.label">
+				<source>Communication</source>
+				<target>Mitteilung</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.fieldset-address.properties.label">
+				<source>Address</source>
+				<target>Anschrift</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.fieldset-contact.properties.label">
+				<source>Contact information</source>
+				<target>Kontaktinformationen</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.fieldset-other.properties.label">
+				<source>Other</source>
+				<target>Sonstiges</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.subject.properties.prependOptionLabel">
+				<source>Please select your request</source>
+				<target>Bitte wählen Sie Ihr Anliegen</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.subject.properties.options.Send me your brochure">
+				<source>Send me your brochure</source>
+				<target>Senden Sie mir Ihre Broschüre zu</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.subject.properties.options.I have questions about one of your products">
+				<source>I have questions about one of your products</source>
+				<target>Ich habe Fragen zu einem Ihrer Produkte</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.subject.properties.options.Please call me back">
+				<source>Please call me back</source>
+				<target>Bitte rufen Sie mich zurück</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.subject.properties.options.Other (please write below)">
+				<source>Other (please write below)</source>
+				<target>Sonstiges (bitte unten vermerken)</target>
+			</trans-unit>
+			<trans-unit id="ExtendedContactFormExample.element.birth-certificate.properties.label">
+				<source>Please upload your birth certificate</source>
+				<target>Bitte laden Sie Ihre Geburtsurkunde hoch</target>
+			</trans-unit>
 			<trans-unit id="ExtendedContactFormExample.finisher.Confirmation.message">
 				<source>Next time, we'll want to know some more about you!</source>
 				<target>Nächstes Mal möchten wir etwas mehr über dich wissen!</target>
 			</trans-unit>
 
 
-			<!-- ### VALIDATION ERROR MESSAGES
-				 ATTENTION: These will not work if you already set a custom message in your form definition!
-
-				 Translation key: <form-identifier>.validation.error.<error-code>
-			-->
-			<trans-unit id="BasicContactFormExample.validation.error.1221559976">
-				<source>Please enter valid email address. Thank you very much!</source>
-				<target>Bitte gebe eine gültige E-Mail-Adresse ein. Vielen herzlichen Dank!</target>
+			<!-- ### FORM: UploadFormExample -->
+			<trans-unit id="UploadFormExample.element.page-1.properties.label">
+				<source>Why don't you upload something?</source>
+				<target>Lad doch mal was hoch!</target>
 			</trans-unit>
 		</body>
 	</file>
