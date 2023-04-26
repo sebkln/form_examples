@@ -70,8 +70,6 @@ finishers:
         databaseColumnMappings:
           pid:
             value: 140
-          table_local:
-            value: sys_file
           tablenames:
             value: tx_formexamples_domain_model_data
           fieldname:
