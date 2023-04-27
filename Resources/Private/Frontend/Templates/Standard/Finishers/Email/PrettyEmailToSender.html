@@ -77,3 +77,16 @@
         </formvh:renderAllFormValues>
     </table>
 </f:section>
+
+<f:comment><!-- New Footer section allows to set different text in each FluidEmail template --></f:comment>
+<f:section name="Footer">
+    <p style="margin-top: 0;">
+        <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.customization"/>
+    </p>
+    <p style="margin-top: 0;">
+        <strong>FluidEmail template</strong>: <code>PrettyEmailToSender.html</code>
+    </p>
+    <p style="margin-top: 0;">
+        <strong>FluidEmail layout</strong>: <code>FormEmail.html</code>
+    </p>
+</f:section>

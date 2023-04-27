@@ -11,6 +11,9 @@
 			<trans-unit id="formManager.selectablePrototypesConfiguration.standardExamples.label">
 				<source>Standard (EXT:form_examples)</source>
 			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.prettyEmailTemplates.label">
+				<source>Pretty email templates (EXT:form_examples)</source>
+			</trans-unit>
 			<trans-unit id="formManager.selectablePrototypesConfiguration.complaintForm.label">
 				<source>Complaint form (EXT:form_examples)</source>
 			</trans-unit>
@@ -19,6 +22,9 @@
 			</trans-unit>
 			<trans-unit id="formManager.selectablePrototypesConfiguration.standardExamples.newFormTemplates.UploadFormExample.label">
 				<source>Upload form</source>
+			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.prettyEmailTemplates.newFormTemplates.CustomFluidEmailExample.label">
+				<source>Custom Email templates</source>
 			</trans-unit>
 			<trans-unit id="formManager.selectablePrototypesConfiguration.complaintForm.newFormTemplates.CustomPrototypeExample.label">
 				<source>Complaint form</source>
@@ -34,6 +40,15 @@
 			</trans-unit>
 			<trans-unit id="formEditor.elements.Form.editor.formStyleClass.subscription.label">
 				<source>Newsletter subscription</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.templateName.label">
+				<source>Email template</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.templateName.PrettyEmailToSender">
+				<source>Pretty email</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.templateName.SpecialEmailToSender">
+				<source>Special email</source>
 			</trans-unit>
 		</body>
 	</file>
