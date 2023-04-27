@@ -1,4 +1,4 @@
-<f:layout name="FormEmail" />
+<f:layout name="SpecialSenderLayout" />
 <f:section name="Title">{title}</f:section>
 <f:section name="Main">
 <f:comment>
@@ -14,7 +14,7 @@
     <f:defaultCase><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.neutral" arguments="{0: '{form.formState.formValues.firstname}', 1: '{form.formState.formValues.lastname}'}"/></f:defaultCase>
 </f:switch>
 
-<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.thankyouMessage"/>
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.thankyouMessage.special"/>
 
 <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.complimentaryClose"/>
 
@@ -37,4 +37,10 @@
     </f:if>
 </f:spaceless>
 </formvh:renderAllFormValues>
+</f:section>
+
+<f:section name="Footer">
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.customization"/>
+FluidEmail template: SpecialEmailToSender.txt
+FluidEmail layout: SpecialSenderLayout.txt
 </f:section>

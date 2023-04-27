@@ -23,6 +23,9 @@
 
 Enclosed you will find your message sent to us.</source>
 			</trans-unit>
+			<trans-unit id="email.thankyouMessage.special">
+				<source>how great to hear from you. We'll get back to you soon - we promise!</source>
+			</trans-unit>
 			<trans-unit id="email.receiver.introduction">
 				<source>The following message was sent via the contact form on our website:</source>
 			</trans-unit>
@@ -35,14 +38,6 @@ ACME Inc.</source>
 			</trans-unit>
 			<trans-unit id="email.footer.note.customization">
 				<source>This email uses a customized Fluid template and layout.</source>
-			</trans-unit>
-			<trans-unit id="email.footer.note.defaultLayout">
-				<source>
-					<![CDATA[For the Fluid template (.html/.txt), the default file name "Default" ist used. The Fluid layout has the self-selected name "FormEmail" (.html/.txt) which is assigned with the <f:layout> ViewHelper in the Fluid template.]]></source>
-			</trans-unit>
-			<trans-unit id="email.footer.note.customReceiverLayout" xml:space="preserve">
-				<source><![CDATA[All files have custom names: "CustomReceiverTemplate" (.html/.txt) for the Fluid template; "CustomReceiverLayout" (.html/.txt) for the Fluid layout.
-The file names are assigned manually: "CustomReceiverTemplate" in the Email finisher (form definition). The "CustomReceiverLayout" in the <f:layout> ViewHelper of the Fluid template.]]></source>
 			</trans-unit>
 		</body>
 	</file>
