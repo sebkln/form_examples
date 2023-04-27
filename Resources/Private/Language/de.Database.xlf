@@ -12,6 +12,10 @@
 				<source>Standard (EXT:form_examples)</source>
 				<target>Standard (EXT:form_examples)</target>
 			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.prettyEmailTemplates.label">
+				<source>Pretty email templates (EXT:form_examples)</source>
+				<target>Hübsche E-Mail-Templates (EXT:form_examples)</target>
+			</trans-unit>
 			<trans-unit id="formManager.selectablePrototypesConfiguration.complaintForm.label">
 				<source>Complaint form (EXT:form_examples)</source>
 				<target>Beschwerdeformular (EXT:form_examples)</target>
@@ -23,6 +27,10 @@
 			<trans-unit id="formManager.selectablePrototypesConfiguration.standardExamples.newFormTemplates.UploadFormExample.label">
 				<source>Upload form</source>
 				<target>Upload-Formular</target>
+			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.prettyEmailTemplates.newFormTemplates.CustomFluidEmailExample.label">
+				<source>Custom Email templates</source>
+				<target>Individuelle Email-Templates</target>
 			</trans-unit>
 			<trans-unit id="formManager.selectablePrototypesConfiguration.complaintForm.newFormTemplates.CustomPrototypeExample.label">
 				<source>Complaint form</source>
@@ -43,6 +51,18 @@
 			<trans-unit id="formEditor.elements.Form.editor.formStyleClass.subscription.label">
 				<source>Newsletter subscription</source>
 				<target>Newsletter-Abonnement</target>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.templateName.label">
+				<source>Email template</source>
+				<target>E-Mail-Template</target>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.templateName.PrettyEmailToSender">
+				<source>Pretty email</source>
+				<target>Hübsche E-Mail</target>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.templateName.SpecialEmailToSender">
+				<source>Special email</source>
+				<target>Außergewöhnliche E-Mail</target>
 			</trans-unit>
 		</body>
 	</file>

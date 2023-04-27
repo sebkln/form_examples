@@ -1,4 +1,4 @@
-<f:layout name="CustomReceiverLayout" />
+<f:layout name="FormEmail" />
 <f:section name="Title">{title}</f:section>
 <f:section name="Main">
 <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.receiver.introduction"/>
@@ -15,4 +15,10 @@
     </f:if>
 </f:spaceless>
 </formvh:renderAllFormValues>
+</f:section>
+
+<f:section name="Footer">
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.customization"/>
+FluidEmail template: PrettyEmailToReceiver.txt
+FluidEmail layout: FormEmail.txt
 </f:section>

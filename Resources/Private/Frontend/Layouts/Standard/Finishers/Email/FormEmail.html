@@ -319,7 +319,7 @@
 
             <f:variable name="backgroundColor" value="#525f78" />
 
-            <!-- HEADER START -->
+            <f:comment><!-- HEADER START --></f:comment>
             <tr><td align="center" valign="top" id="templateHeader" style="background-color: {backgroundColor}">
 
                 <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;"><tr><td align="center" valign="top" width="600" style="width:600px;"><![endif]-->
@@ -331,6 +331,7 @@
                             <tbody>
                             <tr>
                                 <td valign="top" class="image" align="center" style="padding: 0px 36px; padding-bottom: 20px; color: #222222;text-align: center;">
+                                    <f:comment><!-- You can set individual logos. Use 'absolute="1"' to get the necessary absolute path for images in emails! --></f:comment>
                                     <f:image src="EXT:form_examples/Resources/Public/Images/acme-logo.jpg" absolute="1" alt="ACME Logo" height="78" width="140"/>
                                 </td>
                             </tr>
@@ -348,10 +349,10 @@
                 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 
             </td></tr>
-            <!-- HEADER END -->
+            <f:comment><!-- HEADER END --></f:comment>
 
 
-            <!-- BODY START -->
+            <f:comment><!-- BODY START --></f:comment>
             <tr><td align="center" valign="top" id="templateBody">
 
                 <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;"><tr><td align="center" valign="top" width="600" style="width:600px;"><![endif]-->
@@ -377,9 +378,9 @@
                 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 
             </td></tr>
-            <!-- BODY END -->
+            <f:comment><!-- BODY END --></f:comment>
 
-            <!-- FOOTER START -->
+            <f:comment><!-- FOOTER START --></f:comment>
             <tr><td align="center" valign="top" id="templateFooter">
 
                 <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;"><tr><td align="center" valign="top" width="600" style="width:600px;"><![endif]-->
@@ -389,12 +390,8 @@
                         <!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"><tr><td valign="top" width="600" style="width:600px;"><![endif]-->
                         <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="textContentContainer"><tbody><tr><td valign="top" class="textContent" style="padding:0 36px;">
 
-                            <p style="margin-top: 0;">
-                                <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.customization"/>
-                            </p>
-                            <p style="margin-top: 0;">
-                                <f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.defaultLayout"/>
-                            </p>
+                            <f:comment><!-- New Footer section allows to set different text in each FluidEmail template --></f:comment>
+                            <f:render section="Footer" optional="true"/>
 
                         </td></tr></tbody></table>
                         <!--[if mso]></td></tr></table><![endif]-->
@@ -405,7 +402,7 @@
 
 
             </td></tr>
-            <!-- FOOTER END -->
+            <f:comment><!-- FOOTER END --></f:comment>
 
         </table>
     </td></tr></table>

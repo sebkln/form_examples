@@ -1,0 +1,46 @@
+<f:layout name="FormEmail" />
+<f:section name="Title">{title}</f:section>
+<f:section name="Main">
+<f:comment>
+<!--
+    - Personalized salutation, depending on selected title and frontend language.
+    - Individual message, localized depending on frontend language.
+-->
+</f:comment>
+
+<f:switch expression="{form.formState.formValues.title}">
+    <f:case value="Mr"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.mr" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
+    <f:case value="Ms"><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.ms" arguments="{0: '{form.formState.formValues.lastname}'}"/></f:case>
+    <f:defaultCase><f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.salutation.neutral" arguments="{0: '{form.formState.formValues.firstname}', 1: '{form.formState.formValues.lastname}'}"/></f:defaultCase>
+</f:switch>
+
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.thankyouMessage"/>
+
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.complimentaryClose"/>
+
+
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.yourMessageToUs"/>
+<f:comment>
+<!--
+    Form content, rendered as table (identical to original EXT:form Email template)
+-->
+</f:comment>
+<formvh:renderAllFormValues renderable="{form.formDefinition}" as="formValue"><f:spaceless>
+    <f:if condition="{formValue.isMultiValue}">
+        <f:then>
+            <f:if condition="{formValue.isSection}"><f:then>*** <formvh:translateElementProperty element="{formValue.element}" property="label" /> ***</f:then><f:else><formvh:translateElementProperty element="{formValue.element}" property="label" />: <f:for each="{formValue.processedValue}" as="singleValue">- {singleValue}
+            </f:for></f:else></f:if>
+        </f:then>
+        <f:else>
+            <f:if condition="{formValue.isSection}"><f:then>*** <formvh:translateElementProperty element="{formValue.element}" property="label" /> ***</f:then><f:else><formvh:translateElementProperty element="{formValue.element}" property="label" />: <f:if condition="{formValue.processedValue}"><f:then>{formValue.processedValue -> f:format.raw()}</f:then><f:else>-</f:else></f:if></f:else></f:if>
+        </f:else>
+    </f:if>
+</f:spaceless>
+</formvh:renderAllFormValues>
+</f:section>
+
+<f:section name="Footer">
+<f:translate key="LLL:EXT:form_examples/Resources/Private/Language/Form/locallang_custom.xlf:email.footer.note.customization"/>
+FluidEmail template: PrettyEmailToSender.txt
+FluidEmail layout: FormEmail.txt
+</f:section>

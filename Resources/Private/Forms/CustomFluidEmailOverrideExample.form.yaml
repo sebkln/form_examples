@@ -1,0 +1,116 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+identifier: CustomFluidEmailOverrideExample
+label: 'Example - Custom FluidEmail templates (with override in Form definition)'
+type: Form
+prototypeName: prettyEmailTemplates
+finishers:
+  -
+    options:
+      useFluidEmail: true
+      subject: 'E-Mail from website'
+      senderAddress: '{email}'
+      senderName: '{lastname}'
+      attachUploads: true
+      recipients:
+        info@example.com: 'ACME Inc.'
+      addHtmlPart: true
+    identifier: EmailToReceiver
+  -
+    options:
+      # Special email template, selectable in Form Editor and used only for the sender:
+      templateName: SpecialEmailToSender
+      useFluidEmail: true
+      subject: 'Your message to ACME'
+      senderAddress: noreply@example.com
+      senderName: 'ACME Inc.'
+      attachUploads: true
+      recipients:
+        '{email}': '{lastname}'
+      addHtmlPart: true
+    identifier: EmailToSender
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    identifier: page-1
+    label: ''
+    type: Page
+    renderables:
+      -
+        properties:
+          options:
+            Mr: Mr
+            Ms: Ms
+            'Neutral salutation': 'Neutral salutation'
+          prependOptionLabel: 'Please choose ...'
+          fluidAdditionalAttributes:
+            required: required
+        type: SingleSelect
+        identifier: title
+        label: Title
+        variants:
+          -
+            identifier: hide-in-emails
+            renderingOptions:
+              enabled: false
+            condition: 'finisherIdentifier in ["EmailToSender"]'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: firstname
+        label: 'First name'
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: lastname
+        label: 'Last name'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: email
+        label: Email
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        identifier: message
+        label: Message
+        type: Textarea
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: ''
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    identifier: summarypage
+    label: 'Summary page'
+    type: SummaryPage
