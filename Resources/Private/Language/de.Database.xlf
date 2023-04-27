@@ -12,6 +12,10 @@
 				<source>Standard (EXT:form_examples)</source>
 				<target>Standard (EXT:form_examples)</target>
 			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.prettyEmailTemplates.label" approved="yes">
+				<source>Pretty email templates (EXT:form_examples)</source>
+				<target>Hübsche E-Mail-Templates (EXT:form_examples)</target>
+			</trans-unit>
 			<trans-unit id="formManager.selectablePrototypesConfiguration.complaintForm.label" approved="yes">
 				<source>Complaint form (EXT:form_examples)</source>
 				<target>Beschwerdeformular (EXT:form_examples)</target>
@@ -23,6 +27,10 @@
 			<trans-unit id="formManager.selectablePrototypesConfiguration.standardExamples.newFormTemplates.UploadFormExample.label" approved="yes">
 				<source>Upload form</source>
 				<target>Upload-Formular</target>
+			</trans-unit>
+			<trans-unit id="formManager.selectablePrototypesConfiguration.prettyEmailTemplates.newFormTemplates.CustomFluidEmailExample.label" approved="yes">
+				<source>Custom Email templates</source>
+				<target>Individuelle Email-Templates</target>
 			</trans-unit>
 			<trans-unit id="formManager.selectablePrototypesConfiguration.complaintForm.newFormTemplates.CustomPrototypeExample.label" approved="yes">
 				<source>Complaint form</source>
@@ -43,6 +51,18 @@
 			<trans-unit id="formEditor.elements.Form.editor.formStyleClass.subscription.label" approved="yes">
 				<source>Newsletter subscription</source>
 				<target>Newsletter-Abonnement</target>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.templateName.label" approved="yes">
+				<source>Email template</source>
+				<target>E-Mail-Template</target>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.templateName.PrettyEmailToSender" approved="yes">
+				<source>Pretty email</source>
+				<target>Hübsche E-Mail</target>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Form.finisher.EmailToReceiver.editor.templateName.SpecialEmailToSender" approved="yes">
+				<source>Special email</source>
+				<target>Außergewöhnliche E-Mail</target>
 			</trans-unit>
 		</body>
 	</file>

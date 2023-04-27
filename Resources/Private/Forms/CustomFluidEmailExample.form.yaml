@@ -1,14 +1,13 @@
 
 renderingOptions:
   submitButtonLabel: Submit
-identifier: CustomFluidEmail
-label: 'Example - Custom FluidEmail templates'
+identifier: CustomFluidEmailExample
+label: 'Example - Custom FluidEmail templates (set in Form configuration)'
 type: Form
-prototypeName: standardExamples
+prototypeName: prettyEmailTemplates
 finishers:
   -
     options:
-      templateName: CustomReceiverTemplate
       useFluidEmail: true
       subject: 'E-Mail from website'
       senderAddress: '{email}'
@@ -50,14 +49,15 @@ renderables:
         type: SingleSelect
         identifier: title
         label: Title
-        validators:
-          -
-            identifier: NotEmpty
         variants:
-          - identifier: hide-in-emails
+          -
+            identifier: hide-in-emails
             renderingOptions:
               enabled: false
             condition: 'finisherIdentifier in ["EmailToSender"]'
+        validators:
+          -
+            identifier: NotEmpty
       -
         defaultValue: ''
         identifier: firstname
