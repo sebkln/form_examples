@@ -16,6 +16,7 @@ finishers:
       recipients:
         your.company@example.com: 'Your Company name'
       addHtmlPart: true
+      useFluidEmail: true
     identifier: EmailToReceiver
   -
     options:
