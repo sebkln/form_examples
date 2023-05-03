@@ -90,6 +90,9 @@
 			<trans-unit id="UploadFormExample.element.page-1.properties.label">
 				<source>Why don't you upload something?</source>
 			</trans-unit>
+			<trans-unit id="UploadFormExample.finisher.Confirmation.message">
+				<source>The file was uploaded successfully.</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
