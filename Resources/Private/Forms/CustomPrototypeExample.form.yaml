@@ -8,7 +8,7 @@ prototypeName: complaintForm
 finishers:
   -
     options:
-      message: 'Your opinion is very important to us! 🥸'
+      message: 'Oops! No email was sent. Anyway, have a great day! 🥸'
     identifier: Confirmation
 renderables:
   -

@@ -114,6 +114,10 @@
 				<source>Why don't you upload something?</source>
 				<target>Lad doch mal was hoch!</target>
 			</trans-unit>
+			<trans-unit id="UploadFormExample.finisher.Confirmation.message">
+				<source>The file was uploaded successfully.</source>
+				<target>Die Datei wurde erfolgreich hochgeladen.</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

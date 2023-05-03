@@ -45,6 +45,11 @@ finishers:
           uid_foreign:
             value: '{SaveToDatabase.insertedUids.0}'
     identifier: SaveToDatabase
+  -
+    options:
+      message: 'The file was uploaded successfully.'
+      contentElementUid: ''
+    identifier: Confirmation
 renderables:
   -
     renderingOptions:
