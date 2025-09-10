@@ -7,11 +7,11 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Sebastian Klein',
     'author_email' => 'sebastian@sebkln.de',
     'state' => 'stable',
-    'version' => '12.4.1',
+    'version' => '13.4.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.0.0-12.4.99',
-            'form' => '12.0.0-12.4.99',
+            'typo3' => '13.4.0-13.4.99',
+            'form' => '13.4.0-13.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
