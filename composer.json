@@ -1,7 +1,7 @@
 {
 	"name": "sebkln/form-examples",
 	"type": "typo3-cms-extension",
-	"description": "Contains various examples how to use and customize the TYPO3 Form Framework.",
+	"description": "Form examples - Contains various examples how to use and customize the TYPO3 Form Framework.",
 	"license": [
 		"GPL-2.0-or-later"
 	],
@@ -19,7 +19,7 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": ">=13.4.0 <13.4.99"
+		"typo3/cms-core": ">=14.2.0 <14.3.99"
 	},
 	"extra": {
 		"typo3/cms": {
